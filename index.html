@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#010101">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/logo-green.svg" type="image/svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Marjan Zivkovic</title>
+</head>
+<body>
+    <!-- menu button -->
+    <button class="menu-btn"> <span class="less-than"><i class="fa-solid fa-less-than"></i></span> <span class="slash">&sol;</span>  <span class="greater-than"><i class="fa-solid fa-greater-than"></i></span></button>
+    <!-- navigtion -->
+    <nav>
+        <ul class="main-nav">
+            <li class="eng-item"><a href="#about">About me</a></li>
+            <li class="srb-item"><a href="#about">O meni</a></li>
+            <li class="eng-item"><a href="#portfolio">Portfolio</a></li>
+            <li class="srb-item"><a href="#portfolio">Portfolio</a></li>
+            <li class="eng-item"><a href="#edu">Dev edu</a></li>
+            <li class="srb-item"><a href="#edu">IT edukacija</a></li>
+            <li class="eng-item"><a href="#contact">Contact me</a></li>
+            <li class="srb-item"><a href="#contact">Kontakt</a></li>
+            <li>
+                <select class="language-select"  name="language">
+                    <option value="eng">Eng</option>
+                    <option value="srb">Srb</option>
+                </select>
+            </li>
+            <span class="blink-cursor" id="hidden-cursor"></span>
+        </ul>
+    </nav>
+    <!-- hero -->
+    <section class="hero">
+        <h4 class="hero-quote"> <span class="quote-text"></span><span class="blink-cursor"></span></h4>
+        <img src="assets/logo-green.svg" alt="logo" width="400">
+    </section>
+    <!-- empty section -->
+    <div class="nav-active">&nbsp;</div>
+    <!-- welcome section -->
+    <section id="about" class="welcome nav-active">
+        <div class="hi-div transformed">
+            <h1 class="eng-item"> <span class="hi"> Hi,</span> <br> <span class="i-am">I'm Marjan,</span>  <br>a front-end developer</h1>
+            <h1 class="srb-item"> <span class="hi"> Zdravo,</span> <br> <span class="i-am">ja sam Marjan,</span>  <br> frontend developer</h1>
+        </div>
+        <div class="gradient transformed"></div>
+        <div>
+            <img src="assets/marjan.png" alt="Marjan Zivkovic">
+        </div>
+        <div class="hire-me transformed">
+            <p class="eng-item">If you want a website that looks clean, interactive, and beautiful on all devices <span class="arrow-down"><i class="fa-solid fa-turn-down"></i></span></p>
+            <p class="srb-item">Ako želite da Vaš vebsajt bude uredan, interaktivan i izgleda dobro nas svim uređajima <span class="arrow-down"><i class="fa-solid fa-turn-down"></i></span></p>
+            <span class="eng-item"><a class="btn eng-item" href="#contact">Hire me</a></span>
+            <span class="srb-item"><a class="btn srb-item" href="#contact">Angažujte me</a></span>
+        </div>
+    </section>
+    <!-- portfolio -->
+    <main class="portfolio nav-active" id="portfolio">
+        <div class="portfolio-hero-div">
+            <div>
+                <h2 class="eng-item">Check out my projects</h2>
+                <h2 class="srb-item">Neki od mojih projekata</h2>
+            </div>
+            <div class="portfolio-matrix transformed"></div>
+        </div>
+        <div class="portfolio-galery">
+            <!-- AJ tribute -->
+            <div class="portfolio-modal-container">
+                <div class="portfolio-modal transformed">
+                    <div class="close-btn"><i class="fa-sharp fa-solid fa-xmark"></i></div>
+                    <div class="modal-background aj"></div>
+                    <div class="modal-content">
+                        <h3>AJ tribute website</h3>
+                        <div class="eng-item"><i class="fa-solid fa-file-pen modal-icon"></i>
+                            This was my very first project. It's a complete website about my favorite English coach with 9 pages some of which are very different as I wanted to try lots of new ideas.
+                        </div>
+                        <div class="srb-item"><i class="fa-solid fa-file-pen modal-icon"></i>
+                            Moj prvi projekat. U pitanju je kompletan vebsajt o mom omiljenom učitelju engleskog jezika, sa 9 stranica, od koje su neke vrlo različite jer sam probao mnogo novih ideja.
+                        </div>
+                        <div><i class="fa-solid fa-laptop-code modal-icon"></i>
+                            HTML, CSS, JavaScript, AOS.js
+                        </div>
+                        <div class="eng-item"><i class="fa-solid fa-comment modal-icon"></i>
+                            While you're there, if you need to learn English AJ's your guy.
+                        </div>
+                        <div class="srb-item"><i class="fa-solid fa-comment modal-icon"></i>
+                            Dok ste tu, ako želite da naučite engleski, AJ je vaš čovek.
+                        </div>
+                        <div class="eng-item"><a class="btn" href="https://marjanzivkovic.github.io/AJ-Tribute/" target="_blank">Visit page</a></div>
+                        <div class="srb-item"><a class="btn" href="https://marjanzivkovic.github.io/AJ-Tribute/" target="_blank">Poseti stranicu</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-cards transformed mb-10">
+                <div class="portfolio-website aj">
+                    <div class="portfolio-hover">
+                        <small class="eng-item">view more</small>
+                        <small class="srb-item">saznaj više</small>
+                    </div>
+                    <h4>AJ tribute</h4>
+                </div>
+            </div>    
+            <!-- Insect game -->
+            <div class="portfolio-modal-container">
+                <div class="portfolio-modal transformed">
+                    <div class="close-btn"><i class="fa-sharp fa-solid fa-xmark"></i></div>
+                    <div class="modal-background game"></div>
+                    <div class="modal-content">
+                        <h3>Insect catching game</h3>
+                        <div class="eng-item"><i class="fa-solid fa-file-pen modal-icon"></i>
+                            This is a silly game. You pick one of 4 different types of insects. The ones you chose start appearing on the screen in huge amounts. Spoiler alert: you can't catch them.
+                        </div>
+                        <div class="srb-item"><i class="fa-solid fa-file-pen modal-icon"></i>
+                            U pitanju je smešna igra. Birate jednu od 4 vrste insekata. One koje izaberete počinju da se pojavljuju na ekranu u velikim količinama. Upozorenje: ne možete ih pohvatati.  
+                        </div>
+                        <div><i class="fa-solid fa-laptop-code modal-icon"></i>
+                            HTML, CSS, JavaScript
+                        </div>
+                        <div class="eng-item"><i class="fa-solid fa-comment modal-icon"></i>
+                            Credits for inspiration and guidance to Brad Traversy.
+                        </div>
+                        <div class="srb-item"><i class="fa-solid fa-comment modal-icon"></i>
+                            Hvala za inspiraciju i instrukcije Brad Traversy-ju.
+                        </div>
+                        <div class="eng-item"><a class="btn" href="https://marjanzivkovic.github.io/Insect-game/" target="_blank">Visit page</a></div>
+                        <div class="srb-item"><a class="btn" href="https://marjanzivkovic.github.io/Insect-game/" target="_blank">Poseti stranicu</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-cards transformed mt-10">
+                <div class="portfolio-website game">
+                    <div class="portfolio-hover">
+                        <small class="eng-item">view more</small>
+                        <small class="srb-item">saznaj više</small>
+                    </div>
+                    <h4>Insect catching game </h4>
+                </div>
+            </div>    
+            <!-- Fetch quotes -->
+            <div class="portfolio-modal-container">
+                <div class="portfolio-modal transformed">
+                    <div class="close-btn"><i class="fa-sharp fa-solid fa-xmark"></i></div>
+                    <div class="modal-background fetch"></div>
+                    <div class="modal-content">
+                        <h3>Fetch quotes</h3>
+                        <div class="eng-item"><i class="fa-solid fa-file-pen modal-icon"></i>
+                            This is a single-page app. It's a random quote generator. With each click on the button, you get a new quote. If you like some of them you can prepopulate a Facebook or Twitter post with a single click. 
+                        </div>
+                        <div class="srb-item"><i class="fa-solid fa-file-pen modal-icon"></i>
+                            Ovo je single-page aplikacija. U pitanju je generator slučajnih citata. Svakim klikom na dugme dobijate nov citat. Ako vam se neki od njih svidi, samo jednim klikom dobićete popunjen Facebook ili Twitter post.
+                        </div>
+                        <div><i class="fa-solid fa-laptop-code modal-icon"></i>
+                            HTML, CSS, JavaScript, fetch API, async/await
+                        </div>
+                        <div class="eng-item"><i class="fa-solid fa-comment modal-icon"></i>
+                            Credits for inspiration and guidance to the guys from ZTM Academy.
+                        </div>
+                        <div class="srb-item"><i class="fa-solid fa-comment modal-icon"></i>
+                            Hvala za inspiraciju i instrukcije momcima iz ZTM Academy.
+                        </div>
+                        <div class="eng-item"><a class="btn" href="https://marjanzivkovic.github.io/Fetch-Quotes/" target="_blank">Visit page</a></div>
+                        <div class="srb-item"><a class="btn" href="https://marjanzivkovic.github.io/Fetch-Quotes/" target="_blank">Poseti stranicu</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-cards transformed mb-10">
+                <div class="portfolio-website fetch">
+                    <div class="portfolio-hover">
+                        <small class="eng-item">view more</small>
+                        <small class="srb-item">saznaj više</small>
+                    </div>
+                    <h4>Fetch quotes</h4>
+                </div>
+            </div>    
+            <!-- Lazar -->
+            <div class="portfolio-modal-container">
+                <div class="portfolio-modal transformed">
+                    <div class="close-btn"><i class="fa-sharp fa-solid fa-xmark"></i></div>
+                    <div class="modal-background lazar"></div>
+                    <div class="modal-content">
+                        <h3>Lazar Blace</h3>
+                        <div class="eng-item"><i class="fa-solid fa-file-pen modal-icon"></i>
+                            Lazar is a dairy farm from Blace, Serbia, where I am currently employed. For now, there's only the home page, but I hope to get a chance to redesign the entire website soon.
+                        </div>
+                        <div class="srb-item"><i class="fa-solid fa-file-pen modal-icon"></i>
+                            Lazar je mlekara iz Blaca, u kojoj sam trenutno zaposlen. Za sada postoji samo početna stranica, ali nadam se da ću uskoro dobiti priliku da redizajniram ceo vebsajt.
+                        </div>
+                        <div><i class="fa-solid fa-laptop-code modal-icon"></i>
+                            HTML, CSS, Bootstrap, JavaScript, AOS.js, leaflet.js, localStorage API
+                        </div>
+                        <div class="eng-item"><i class="fa-solid fa-comment modal-icon"></i>
+                            If you have the chance, try out Lazar's products. They are even better than this web design.
+                        </div>
+                        <div class="srb-item"><i class="fa-solid fa-comment modal-icon"></i>
+                            Ukoliko imate priliku probajte Lazareve proizvode. Još su bolji od ovog web dizajna.
+                        </div>
+                        <div class="eng-item"><a class="btn" href="https://marjanzivkovic.github.io/Lazar-Blace/" target="_blank">Visit page</a></div>
+                        <div class="srb-item"><a class="btn" href="https://marjanzivkovic.github.io/Lazar-Blace/" target="_blank">Poseti stranicu</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-cards transformed mt-10">
+                <div class="portfolio-website lazar">
+                    <div class="portfolio-hover">
+                        <small class="eng-item">view more</small>
+                        <small class="srb-item">saznaj više</small>
+                    </div>
+                    <h4>Lazar Blace</h4>
+                </div>
+            </div>    
+            <!-- Clock -->
+            <div class="portfolio-modal-container">
+                <div class="portfolio-modal transformed">
+                    <div class="close-btn"><i class="fa-sharp fa-solid fa-xmark"></i></div>
+                    <div class="modal-background clock"></div>
+                    <div class="modal-content">
+                        <h3>Analog clock</h3>
+                        <div class="eng-item"><i class="fa-solid fa-file-pen modal-icon"></i>
+                            Analog clock, drawn using the HTML canvas element. Click on the button and you make a copy of the clock hands and start measuring the time until the next click.
+                        </div>
+                        <div class="srb-item"><i class="fa-solid fa-file-pen modal-icon"></i>
+                            Analogni sat nacrtan pomoću HTML canvas elementa. Klikom na dugme pravite kopiju kazaljki i počinje merenje vremena do sledećeg klika.
+                        </div>
+                        <div><i class="fa-solid fa-laptop-code modal-icon"></i>
+                            HTML, CSS, JavaScript, Canvas API
+                        </div>
+                        <div class="eng-item"><i class="fa-solid fa-comment modal-icon"></i>
+                            It was an assignment I did at IT Academy.
+                        </div>
+                        <div class="srb-item"><i class="fa-solid fa-comment modal-icon"></i>
+                            Ovo je bio jedan od mojih assignment-a na IT Academy.
+                        </div>
+                        <div class="eng-item"><a class="btn" href="https://marjanzivkovic.github.io/Analog-Clock/" target="_blank">Visit page</a></div>
+                        <div class="srb-item"><a class="btn" href="https://marjanzivkovic.github.io/Analog-Clock/" target="_blank">Poseti stranicu</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-cards transformed mb-10">
+                <div class="portfolio-website clock">
+                    <div class="portfolio-hover">
+                        <small class="eng-item">view more</small>
+                        <small class="srb-item">saznaj više</small>
+                    </div>
+                    <h4>Analog clock</h4>
+                </div>
+            </div>    
+            <!-- Empty div -->
+            <div class="portfolio-cards portfolio-matrix transformed"></div>
+        </div>
+    </main>
+    <!-- green background -->
+    <div class="edu-green-slope"></div> 
+    <!-- Dev education -->
+    <section class="edu nav-active" id="edu">
+        <div> 
+            <h2 class="eng-item">Developer education</h2>
+            <h2 class="srb-item">IT edukacija</h2>
+        </div>
+        <div class="edu-container">
+            <div class="edu-item">
+                <div class="edu-item">
+                    <a class="transformed" href="https://www.it-akademija.com/" target="_blank"><img src="assets/ita.png" alt="ITA logo"></a>
+                    <div class="edu-description">
+                        <h3>Frontend JavaScript Development</h3>
+                        <div class="eng-item"><i class="fa-regular fa-building"></i> ITAcademy, LINK group</div>
+                        <div class="srb-item"><i class="fa-regular fa-building"></i> ITAcademija, LINK grupa</div>
+                        <div><i class="fa-solid fa-chalkboard-user"></i> Vuk Ninić, Dušan Čoko</div>
+                        <div><i class="fa-regular fa-calendar-days"></i> 2021/2022</div>
+                        <div class="eng-item" title="status"><i class="fa-solid fa-check-double"></i> Finished</div>
+                        <div class="srb-item" title="status"><i class="fa-solid fa-check-double"></i> Završen</div>
+                        <div class="eng-item"><i class="fa-solid fa-file-pdf"></i><a href="pdfs/izvestaj o skolovanju ITA.pdf" target="_blank"> Download certificate</a></div>
+                        <div class="srb-item"><i class="fa-solid fa-file-pdf"></i><a href="pdfs/izvestaj o skolovanju ITA.pdf" target="_blank"> Preuzmi sertifikat</a></div>
+                    </div>
+                </div>
+                <div class="edu-item">
+                    <div class="edu-description">
+                        <h3 class="eng-item">50 Projects In 50 Days, HTML, CSS &amp;JS</h3>
+                        <h3 class="srb-item">50 Projekata u 50 Dana, HTML, CSS &amp;JS</h3>
+                        <div><i class="fa-regular fa-building"></i> Traversy Media, Udemy</div>
+                        <div><i class="fa-solid fa-chalkboard-user"></i> Brad Traversy, Florin Pop</div>
+                        <div><i class="fa-regular fa-calendar-days"></i> 2022</div>
+                        <div class="eng-item" title="status"><i class="fa-solid fa-check-double"></i> Finished</div>
+                        <div class="srb-item" title="status"><i class="fa-solid fa-check-double"></i> Završen</div>
+                        <div class="eng-item"><i class="fa-solid fa-file-pdf"></i><a href="pdfs/50 projects certificate.pdf" target="_blank"> Download certificate</a></div>
+                        <div class="srb-item"><i class="fa-solid fa-file-pdf"></i><a href="pdfs/50 projects certificate.pdf" target="_blank"> Preuzmi sertifikat</a></div>
+                    </div>
+                    <a class="transformed moved-right" href="https://www.traversymedia.com/" target="_blank"><img src="assets/traversy.jpg" alt="Traversy logo"></a> 
+                </div>
+            </div>
+            <div class="edu-item">
+                <div class="edu-item">
+                    <a class="transformed" href="https://zerotomastery.io/" target="_blank"><img src="assets/ztm.png" alt="ZTM logo"></a> 
+                    <div class="edu-description">
+                        <h3 class="eng-item" title="JavaScript Web Projects: 20 Projects to Build Your Portfolio">JavaScript Web Projects: 20 Projects...</h3>
+                        <h3 class="srb-item" title="JavaScript Web Projekti: 20 Projekata da izgradite Vaš Portfolio">JavaScript Web Projekti: 20 Projekata...</h3>
+                        <div><i class="fa-regular fa-building"></i> ZTM Academy, Udemy</div>
+                        <div><i class="fa-solid fa-chalkboard-user"></i> Andrei Neagoie, Jacinto Wong</div>
+                        <div><i class="fa-regular fa-calendar-days"></i> 2022</div>
+                        <div class="eng-item" title="status"><i class="fa-solid fa-check"></i> In progress</div>
+                        <div class="srb-item" title="status"><i class="fa-solid fa-check"></i> U toku</div>
+                        <div><i class="fa-solid fa-file-pdf"></i> ---</div>
+                    </div>
+                </div>
+                <div class="edu-item">
+                    <div class="edu-description">
+                        <h3 class="eng-item">React - The Complete Guide</h3>
+                        <h3 class="srb-item">React - Kompletan vodič</h3>
+                        <div><i class="fa-regular fa-building"></i> Academind, Udemy</div>
+                        <div><i class="fa-solid fa-chalkboard-user"></i> Maximilian Schwarzmüller</div>
+                        <div><i class="fa-regular fa-calendar-days"></i> 2022</div>
+                        <div class="eng-item" title="status"><i class="fa-solid fa-minus"></i> Next</div>
+                        <div class="srb-item" title="status"><i class="fa-solid fa-minus"></i> Sledeći</div>
+                        <div><i class="fa-solid fa-file-pdf"></i> ---</div>
+                    </div>
+                    <a class="transformed moved-right" href="https://academind.com/" target="_blank"><img src="assets/max.jpg" alt="Maximilian logo"></a> 
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="edu-green-slope"></div> 
+    <!-- contact -->
+    <section class="contact nav-active" id="contact">
+        <h2 class="eng-item">Contact me</h2>
+        <h2 class="srb-item">Kontaktirajte me</h2>
+        <div class="contact-flex">
+            <div class="contact-info">
+                <h3 class="eng-item">Marjan Zivkovic</h3>
+                <h3 class="srb-item">Marjan Živković</h3>
+                <div class="eng-item"><i class="fa-solid fa-location-dot"></i> Rada Drainca bb, Blace, Serbia</div>
+                <div class="srb-item"><i class="fa-solid fa-location-dot"></i> Rada Drainca bb, Blace, Srbija</div>
+                <div><i class="fa-solid fa-phone"></i> +381643466230</div>
+                <div><i class="fa-solid fa-at"></i> zivkovicmarjan@yahoo.com</div>
+            </div>
+            <div class="contact-text transformed"> 
+                <p class="eng-item">I'm interested in working for an innovative and dynamic company where I can hone my skills and improve both as a developer and a person. Until I find that place, I'm available as a freelancer for smaller projects.</p>
+                <p class="srb-item">Zainteresovan sam za posao u inovativnoj i dinamičnoj kompaniji gde mogu da usavršavam svoje veštine i da napredujem kao developer i kao osoba. Dok ne pronađem takvo mesto, dostupan sam kao freelancer na manjim projektima.</p>
+            </div>
+        </div>
+        <div class="contact-form transformed">
+            <p class="eng-item">Email me</p>
+            <p class="srb-item">Pošaljite email</p>
+            <form action="mailto:zivkovicmarjan@yahoo.com" method="post" enctype="text/plain" name="contact-form">
+                <input type="text"  placeholder="Enter your name / unesite ime" title="Please, enter your name" required>
+                <input type="email"  placeholder="Enter your email  / unesite email" required title="Please, enter your email">
+                <textarea rows="6"  placeholder="Enter message / unesite poruku" title="Please, enter your message"></textarea>
+                <input class="btn" id="submit" type="submit"  value="Send email">
+            </form>
+            <div class="validation-message" hidden>
+                <p> If this action took you to your default email sending app and you sent me an email, <strong>THANKS!</strong> 🙂  <br> I'll do my best to contact you soon. </p> 
+                <p> If nothing happened, <strong>SORRY!</strong> 😞 <br> You can complete the action using this link: <i class="fa-regular fa-circle-right"></i> <a href="https://form.jotform.com/222502700258042" target="_blank">Try here!</a></p> 
+            </div>
+            <div class="validaciona-poruka" hidden lang="sr">
+                <p> Ako Vas je ova akcija odvela do Vaše aplikacije za slanje emaila i ako ste mi poslali email, <strong>HVALA!</strong> 🙂  <br>  Potrudiću se da Vas kontaktiram uskoro.</p> 
+                <p>Ako se ništa nije dogodilo, <strong>IZVINITE!</strong> 😞 <br>  Započetu akciju možete dovršiti na ovom linku: <i class="fa-regular fa-circle-right"></i> <a href="https://form.jotform.com/222502700258042" target="_blank">Probajte ovde!</a></p>
+            </div>
+        </div>
+        <footer>
+            <div>&copy; <span class="current-year"></span> Copyright by Marjan <a href="https://github.com/MarjanZivkovic" target="_blank" title="Github profile"><i class="fa-brands fa-github"></i></a></div>
+            <div class="to-top" title="Go to top"><a href="#"><i class="fa-regular fa-circle-up"></i></a></div>
+        </footer>
+    </section>    
+    
+    <script src="script.js"></script>
+</body>
+</html>
