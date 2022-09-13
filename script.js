@@ -88,7 +88,7 @@ function transformBack(){
         const halfScreen = window.innerHeight / 2 + 100
         const elTop = el.getBoundingClientRect().top
         if ( elTop < halfScreen ){
-            el.style.animation = 'translateBack 3s ease forwards'
+            el.style.animation = 'translateBack 2s ease forwards'
         } 
     })
 }

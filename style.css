@@ -18,9 +18,9 @@ html{
     scroll-behavior: smooth;
 }
 body{
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
     font-family: 'Poppins', sans-serif;
     background-color: var(--primary-black);
     color: var(--primary-green);
@@ -70,6 +70,9 @@ a{
     transform: translate(-400%, 0);
 }
 /* hero */
+.hero, .nav-active{
+    overflow: hidden;
+}
 .hero{
     min-height: 100vh;
     background: url(assets/matrix.jpg) no-repeat left center / contain;
@@ -191,7 +194,7 @@ nav ul li a:hover, .language-select:hover{
 }
 .hi-div{
     color: var(--primary-black);
-    transform: translate(-400%, 0);
+    transform: translate(-100vw, 0);
 }
 .hi{
     letter-spacing: 5px;
@@ -208,7 +211,7 @@ nav ul li a:hover, .language-select:hover{
 }
 .hire-me{
     text-align: end;
-    transform: translate(400%, 0);
+    transform: translate(100vw, 0);
 }
 .btn{
     display: block;
@@ -418,11 +421,13 @@ nav ul li a:hover, .language-select:hover{
 .edu-green-slope{
     height: 20vh;
     background: linear-gradient(to bottom right, rgba(100,216,107,1) 50%, rgba(1,1,1,1) 50%);
+    margin-bottom: 0;
+    margin-top: -2px;
 }
 .edu-green-slope:nth-of-type(2){
     height: 25vh;
     background: linear-gradient(to top right, rgba(100,216,107,1) 50%, rgba(1,1,1,1) 50%);
-
+    margin-bottom: -1px;
 }
 .edu{
     background-color: var(--primary-green);
@@ -444,10 +449,10 @@ nav ul li a:hover, .language-select:hover{
     text-decoration: underline;
 }
 .edu-item a.transformed{
-    transform: translateX(-400%);
+    transform: translateX(-100vw);
 }
 .edu-item a.transformed.moved-right{
-    transform: translateX(400%);
+    transform: translateX(100vw);
 }
 .edu-item img{
     max-width: 200px;
@@ -603,10 +608,11 @@ footer{
         font-size: 15px;
     }
     .hero img{
-        bottom: 10rem;
+        bottom: 12rem;
     }
     .hero-quote{
         margin-left: 0;
+        padding-bottom: 2rem;
     }
     .welcome img{
         max-width: 200px;
@@ -721,6 +727,9 @@ footer{
     .hero img{
         bottom: 40%;
     }
+    .hero-quote{
+        padding-bottom: 5rem;
+    }
     .hi, .i-am{
         letter-spacing: 0; 
     }
@@ -782,6 +791,9 @@ footer{
     .hero{
         padding: 0 2rem 2rem;
     }
+    .blink-cursor{
+        background-size: 2px 2px;
+    }
     .gradient{
         display: block;
     }
@@ -798,6 +810,7 @@ footer{
     }
     .hi-div{
         background-color: var(--primary-green);
+        padding: 0 2rem;
     }
     .hire-me p{
         padding: 0 2rem;
