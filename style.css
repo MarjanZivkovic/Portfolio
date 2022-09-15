@@ -558,13 +558,19 @@ input:focus, textarea:focus{
     font-weight: lighter;
     cursor: pointer;
 }
+.validation-message{
+    padding: 1rem 1.5rem;
+    background-color: var(--primary-black);
+    box-shadow: 0 0 10px rgba(100, 216, 107, 0.3);
+    border-radius: 10px;
+}
 .validation-message a, .validaciona-poruka a{
     text-decoration: underline;
     text-transform: uppercase;
     margin-left: 2rem;
 }
 .validation-message a:hover, .validaciona-poruka a:hover{
-    letter-spacing: 3px;
+    letter-spacing: 2px;
 }
 /*footer*/
 footer{
@@ -630,6 +636,9 @@ footer{
     }
     .edu-item a{
         text-decoration: underline;
+    }
+    .edu-item a.transformed.moved-right{
+        order: -1;
     }
     .contact-form{
         width: 80%;

@@ -139,20 +139,20 @@ closeModal.forEach((btn) =>{
     })
 }) //close modal
 
+window.addEventListener('click', (e) => {
+    if( e.target.classList.contains('portfolio-modal-container')){
+        e.target.classList.remove('open-modal')
+    }
+}) //closing modals on click outside
+
 
 //form validation
 const form = document.querySelector('form')
 const validationMessage = document.querySelector('.validation-message')
-const validacionaPoruka = document.querySelector('.validaciona-poruka')
-
 
 function validateForm(){
     form.hidden = true
-    if ( chosenLang === 'srb' ){
-        validacionaPoruka.hidden = false
-    } else {
-        validationMessage.hidden = false
-    }
+    validationMessage.hidden = false
 }
 
 form.addEventListener('submit', validateForm)
