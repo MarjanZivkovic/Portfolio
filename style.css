@@ -241,7 +241,7 @@ nav ul li a:hover, .language-select:hover{
 }
 /* portfolio section */
     /*portfolio on main screen*/
-.portfolio-hero-div{
+.portfolio-hero-div, .edu-hero-div{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -432,6 +432,9 @@ nav ul li a:hover, .language-select:hover{
 .edu{
     background-color: var(--primary-green);
     color: var(--primary-black);
+}
+.edu-hero-div .portfolio-matrix{
+    background: url(assets/matrix-horizontal-reverse.jpg) no-repeat right center / cover;
 }
 .edu h2{
     margin-top: 0;

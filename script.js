@@ -121,7 +121,8 @@ function removeActiveLinks(){
     activeNavLinks.forEach(link => link.classList.remove('active-link'))
 }
 
-window.addEventListener('scroll', changeActiveNavLinks)
+window.addEventListener('scroll', changeActiveNavLinks) //change active nav links
+
 
 //modal portfolio windows handler
 const cards = document.querySelectorAll('.portfolio-cards')
