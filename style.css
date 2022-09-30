@@ -699,6 +699,7 @@ footer{
     }
     .edu-item a.transformed.moved-right{
         order: -1;
+        transform: translateX(-100vw);
     }
     .contact-form{
         width: 80%;
@@ -711,6 +712,32 @@ footer{
     }
     .btn-3d a{
         font-size: 1rem;
+    }
+}
+/*landscape*/
+@media (max-width: 960px ) and (orientation: landscape){
+    .hero{
+        padding-bottom: 1rem;
+    }
+    .hero-quote{
+        margin-bottom: 0;
+        padding-bottom: 1rem;
+    }
+    .hero img{
+        bottom: 4rem;
+    }
+    nav ul{
+        margin-top: -0.5rem;
+    }
+    nav ul li a, .language-select{
+        padding: 0.25rem 1rem;
+        font-size: 1rem;    
+    }
+    .language-select{
+        margin-top: 0.4rem;
+    }
+    .menu-btn{
+        margin-top: -0.5rem;
     }
 }
 /*large phone*/
@@ -869,6 +896,16 @@ footer{
     }
     .fa-github{
         margin-left: 1rem;
+    }
+}
+/*landscape*/
+@media (max-width: 700px ) and (orientation: landscape){
+    .hero-quote{
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    .hero img{
+        bottom: 4rem;
     }
 }
 /*phone*/
