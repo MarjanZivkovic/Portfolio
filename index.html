@@ -26,13 +26,13 @@
             <li class="srb-item"><a href="#edu">IT edukacija</a></li>
             <li class="eng-item"><a href="#contact">Contact me</a></li>
             <li class="srb-item"><a href="#contact">Kontakt</a></li>
-            <li>
+            <li class="lang-li">
                 <select class="language-select"  name="language">
                     <option value="eng">Eng</option>
                     <option value="srb">Srb</option>
                 </select>
             </li>
-            <span class="blink-cursor" id="hidden-cursor"></span>
+            <li><span class="blink-cursor" id="hidden-cursor"></span></li> 
         </ul>
     </nav>
     <!-- hero -->
@@ -276,8 +276,8 @@
                         <div><i class="fa-regular fa-calendar-days"></i> 2021/2022</div>
                         <div class="eng-item" title="status"><i class="fa-solid fa-check-double"></i> Finished</div>
                         <div class="srb-item" title="status"><i class="fa-solid fa-check-double"></i> Završen</div>
-                        <div class="eng-item"><i class="fa-solid fa-file-pdf"></i><a href="pdfs/izvestaj o skolovanju ITA.pdf" target="_blank"> Download certificate</a></div>
-                        <div class="srb-item"><i class="fa-solid fa-file-pdf"></i><a href="pdfs/izvestaj o skolovanju ITA.pdf" target="_blank"> Preuzmi sertifikat</a></div>
+                        <div class="eng-item"><i class="fa-solid fa-file-pdf"></i><a href="pdfs/ITA_Certificate.pdf" target="_blank"> Download certificate</a></div>
+                        <div class="srb-item"><i class="fa-solid fa-file-pdf"></i><a href="pdfs/ITA_Certificate.pdf" target="_blank"> Preuzmi sertifikat</a></div>
                     </div>
                 </div>
                 <div class="edu-item">
@@ -289,8 +289,8 @@
                         <div><i class="fa-regular fa-calendar-days"></i> 2022</div>
                         <div class="eng-item" title="status"><i class="fa-solid fa-check-double"></i> Finished</div>
                         <div class="srb-item" title="status"><i class="fa-solid fa-check-double"></i> Završen</div>
-                        <div class="eng-item"><i class="fa-solid fa-file-pdf"></i><a href="pdfs/50 projects certificate.pdf" target="_blank"> Download certificate</a></div>
-                        <div class="srb-item"><i class="fa-solid fa-file-pdf"></i><a href="pdfs/50 projects certificate.pdf" target="_blank"> Preuzmi sertifikat</a></div>
+                        <div class="eng-item"><i class="fa-solid fa-file-pdf"></i><a href="pdfs/50_projects_certificate.pdf" target="_blank"> Download certificate</a></div>
+                        <div class="srb-item"><i class="fa-solid fa-file-pdf"></i><a href="pdfs/50_projects_certificate.pdf" target="_blank"> Preuzmi sertifikat</a></div>
                     </div>
                     <a class="transformed moved-right" href="https://www.traversymedia.com/" target="_blank"><img src="assets/traversy.jpg" alt="Traversy logo"></a> 
                 </div>
@@ -347,26 +347,21 @@
         <div class="contact-form transformed">
             <p class="eng-item">Email me</p>
             <p class="srb-item">Pošaljite email</p>
-            <form action="mailto:zivkovicmarjan@yahoo.com" method="post" enctype="text/plain">
-                <input type="text"  placeholder="Enter your name / unesite ime" title="Please, enter your name" required>
-                <input type="email"  placeholder="Enter your email  / unesite email" required title="Please, enter your email">
-                <textarea rows="6"  placeholder="Enter message / unesite poruku" title="Please, enter your message"></textarea>
-                <input class="btn" id="submit" type="submit"  value="Send email">
-            </form>
-            <div class="validation-message" hidden>
-                <div class="eng-item">
-                    <p> If this action took you to your default email sending app and you sent me an email, <strong>THANKS!</strong> 🙂  <br> I'll do my best to contact you soon. </p> 
-                    <p> If nothing happened, <strong>SORRY!</strong> 😞 <br> You can complete the action using this link: <i class="fa-regular fa-circle-right"></i> <a href="https://form.jotform.com/222502700258042" target="_blank">Try here!</a></p> 
-                </div>
-                <div class="srb-item">
-                    <p> Ako Vas je ova akcija odvela do Vaše aplikacije za slanje emaila i ako ste mi poslali email, <strong>HVALA!</strong> 🙂  <br>  Potrudiću se da Vas kontaktiram uskoro.</p> 
-                    <p>Ako se ništa nije dogodilo, <strong>IZVINITE!</strong> 😞 <br>  Započetu akciju možete dovršiti na ovom linku: <i class="fa-regular fa-circle-right"></i> <a href="https://form.jotform.com/222502700258042" target="_blank">Probajte ovde!</a></p>
+            <div class="eng-item"><small> This 3D button <i class="fa-regular fa-circle-down"></i> will redirect you to the form page</small></div>
+            <div class="srb-item"><small> Ovo 3D dugme <i class="fa-regular fa-circle-down"></i> će Vas preusmeriti na stranicu obrasca</small></div>
+            <div class="btn-3d-container">
+                <div class="btn-3d-holder">
+                    <img src="assets/matrix.jpg" alt="matrix">
+                    <div class="btn-3d">
+                        <a class="eng-item" href="https://form.jotform.com/222502700258042" target="_blank">Send email!</a>
+                        <a class="srb-item" href="https://form.jotform.com/222502700258042" target="_blank">Pošalji email!</a>
+                    </div>
                 </div>
             </div>
         </div>
         <footer>
             <div>&copy; <span class="current-year"></span> Copyright by Marjan <a href="https://github.com/MarjanZivkovic" target="_blank" title="Github profile"><i class="fa-brands fa-github"></i></a></div>
-            <div class="to-top" title="Go to top"><a href="#"><i class="fa-regular fa-circle-up"></i></a></div>
+            <div class="to-top" title="Go to top"><i class="fa-regular fa-circle-up"></i></div>
         </footer>
     </section>    
     

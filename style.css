@@ -25,6 +25,20 @@ body{
     background-color: var(--primary-black);
     color: var(--primary-green);
 }
+::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 6px rgba(1, 1, 1, 0.3);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.2);
+    background-color: var(--primary-black)
+}
 h1{
     font-size: 2.5rem;
 }
@@ -150,7 +164,7 @@ nav ul li{
     padding-top: 0.5rem;
     margin-top: -1px;
 }
-nav ul li:last-of-type{
+.lang-li{
     padding-top: 0;
 }
 nav ul li a{
@@ -349,7 +363,6 @@ nav ul li a:hover, .language-select:hover{
     /* portfolio modals */
 .portfolio-modal-container{
     display: none;
-    overflow-y: scroll;
     padding: 0 1rem;
 }
 .portfolio-modal-container.open-modal{
@@ -367,12 +380,14 @@ nav ul li a:hover, .language-select:hover{
 .portfolio-modal{
     opacity: 0;
     max-width: 840px;
+    max-height: 90vh;
     margin: 1rem auto;
     position: relative;
     background-color: var(--primary-black);
     color: #fff;
     border-radius: 15px;
     box-shadow: 0 0 20px 10px rgba(100, 216, 107, 0.3);
+    overflow-y: auto;
     overflow-x: hidden;
 }
 .modal-background{
@@ -522,11 +537,6 @@ nav ul li a:hover, .language-select:hover{
 .contact-info h3{
     text-transform: uppercase;
 }
-.contact-form{
-    width: 50%;
-    padding: 1rem 0;
-    opacity: 0;
-}
 .contact-text{
     opacity: 0;
     width: 60%;
@@ -536,45 +546,72 @@ nav ul li a:hover, .language-select:hover{
     border-radius: 10px;
     box-shadow:  0 0 10px rgba(100, 216, 107, 0.4);
 }
-input, textarea{
-    display: block;
-    width: 100%;
-    padding: 0.75rem 1rem;
-    margin: 1.2rem 0;
-    font-family: inherit;
-    font-size: 1rem;
-    border: none;
-    border-bottom: 1px solid var(--primary-green);
-    background-color: transparent;
-    color: #fff;
+.contact-form{
+    width: 50%;
+    padding: 1rem 0;
+    opacity: 0;
 }
-input:focus, textarea:focus{
-    box-shadow: 0 0 10px rgba(100, 216, 107, 0.3);
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+.contact-form p{
+    font-weight: bold;
 }
-#submit{
-    width: 40%;
-    margin-left: auto;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    font-weight: lighter;
-    cursor: pointer;
-}
-.validation-message{
-    padding: 1rem 1.5rem;
-    background-color: var(--primary-black);
-    box-shadow: 0 0 10px rgba(100, 216, 107, 0.3);
+.btn-3d-container{
+    padding: 5rem 0;
+    background-color: var(--primary-green);
+    margin: 2rem 0;
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    perspective: 1000px;
 }
-.validation-message a, .validaciona-poruka a{
-    text-decoration: underline;
+.btn-3d-holder{
+    position: relative;
+    width: 80%;
+    padding: 7rem 0;
+    background-color: var(--primary-black);
+    border-radius: 10px;
+    border: 3px solid var(--primary-black);
+    box-shadow: 0 0 20px 5px rgba(1, 1, 1, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+}
+.btn-3d-holder img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20rem;
+    object-fit: contain;
+    transition: all 0.75s ease-out;
+    z-index: -1;
+}
+.btn-3d{
+    padding: 1rem 3rem;
+    background-color: var(--primary-black);
+    border: 3px solid var(--primary-green);
+    border-radius: 10px;
+    box-shadow: 0 0 10px 5px rgba(100, 216, 107, 0.3);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-3d:hover{
+    background-color: var(--primary-green);
+    color: var(--primary-black);
+}
+.btn-3d a{
+    padding: 1rem 3rem;
     text-transform: uppercase;
-    margin-left: 2rem;
-}
-.validation-message a:hover, .validaciona-poruka a:hover{
+    font-size: 1.2rem;
     letter-spacing: 2px;
 }
+.btn-3d a:hover{
+    letter-spacing: 3px;
+}
+
 /*footer*/
 footer{
     display: flex;
@@ -584,6 +621,7 @@ footer{
 }
 .to-top{
     font-size: 2rem;
+    cursor: pointer;
 }
 .to-top:hover{
     transform: scale(1.2);
@@ -598,17 +636,33 @@ footer{
         max-width: 1920px;
         margin: auto;
     }
+    nav ul{
+        left: 60%;
+    }
+    .hero{
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+        padding: 0;
+    }
+    .hero img{
+        position: relative;
+    }
+    .edu-green-slope:nth-of-type(2){
+        margin-bottom: -2px;
+    }
 }
 /*small laptop*/
 @media (max-width: 1280px ) {
     .hero img{
         max-width: 200px;
+        bottom: 10rem;
     }
     .edu-item{
         justify-content: center;
     }
-    #submit{
-        font-size: 1rem;
+    .contact-form{
+        width: 70%;
     }
 }
 /*tablet*/
@@ -637,6 +691,9 @@ footer{
         width: 60%;
         margin: 1.5rem 0;
     }
+    .edu-item img{
+        max-width: 150px;
+    }
     .edu-item a{
         text-decoration: underline;
     }
@@ -646,24 +703,14 @@ footer{
     .contact-form{
         width: 80%;
     }
-    input, textarea{
-        background-color: var(--primary-black);
-    }
     .contact::after{
         opacity: 0.5;
     }
-}
-/*phone orientation landscape*/
-@media (max-width: 960px) and (orientation: landscape){
-    .modal-background{
-        height: 80px;
+    .btn-3d-container{
+        padding: 3rem 0;
     }
-    .modal-background.aj, .modal-background.game, .modal-background.fetch, .modal-background.lazar, .modal-background.clock{
-        background-size: contain;
-        background-position: center center;
-    }
-    .edu-item img{
-        max-width: 150px;
+    .btn-3d a{
+        font-size: 1rem;
     }
 }
 /*large phone*/
@@ -732,7 +779,7 @@ footer{
     nav ul li a{
         background-color: transparent;
     }
-    nav ul li:last-of-type{
+    .lang-li{
         order: -1;
     }
     /*hero*/
@@ -740,10 +787,33 @@ footer{
         bottom: 40%;
     }
     .hero-quote{
-        padding-bottom: 5rem;
+        padding-bottom: 3rem;
+    }
+    .welcome{
+        flex-direction: column;
+        background: none;
+        padding: 0;
+    }
+    .welcome div{
+        width: 100%;
+        text-align: center;
+    }
+    .hi-div{
+        background-color: var(--primary-green);
+        padding: 0 2rem;
     }
     .hi, .i-am{
         letter-spacing: 0; 
+    }
+    .hire-me p{
+        padding: 0 2rem;
+    }
+    .btn{
+        width: 80%;
+        margin: 2rem auto ;
+    }
+    .gradient{
+        display: block;
     }
     /*portfolio*/
     .portfolio-cards{
@@ -767,6 +837,9 @@ footer{
         width: 60%;
         font-size: 1rem;
     }
+    .edu-item{
+        flex-direction: column;
+    }
     /*contact*/
     .contact-flex{
         flex-direction: column;
@@ -782,8 +855,14 @@ footer{
         top: 50%;
         opacity: 0.2;
     }
-    #submit{
-        width: 60%;
+    .btn-3d{
+        padding: 1rem;
+    }
+    .btn-3d a{
+        padding: 0.5rem 2rem;
+    }
+    .btn-3d-holder img{
+        height: 19rem;
     }
     footer{
         text-align: center;
@@ -803,33 +882,17 @@ footer{
     .hero{
         padding: 0 2rem 2rem;
     }
+    .hero-quote{
+        padding-bottom: 5rem;
+    }
     .blink-cursor{
         background-size: 2px 2px;
-    }
-    .gradient{
-        display: block;
     }
     .nav-active{
         padding: 2rem;
     }
     .welcome{
-        background: none;
         padding: 0;
-    }
-    .welcome div{
-        width: 100%;
-        text-align: center;
-    }
-    .hi-div{
-        background-color: var(--primary-green);
-        padding: 0 2rem;
-    }
-    .hire-me p{
-        padding: 0 2rem;
-    }
-    .btn{
-        width: 80%;
-        margin: 2rem auto ;
     }
     #portfolio{
         padding: 0;
@@ -843,8 +906,11 @@ footer{
     .contact{
         padding-bottom: 0;
     }
-    #submit{
-        width: 100%;
+    .btn-3d{
+        padding: 0.5rem;
+    }
+    .btn-3d-holder img{
+        height: 18rem;
     }
     footer{
         flex-direction: row;
@@ -853,5 +919,3 @@ footer{
         padding-left: 0;
     }
 }
-
-

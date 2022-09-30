@@ -131,32 +131,52 @@ const closeModal = document.querySelectorAll('.close-btn')
 cards.forEach((card) =>{
     card.addEventListener('click', () =>{
         card.previousElementSibling.classList.add('open-modal')
+        document.body.style.overflow = 'hidden'
     })
 }) //open modal
 
 closeModal.forEach((btn) =>{
     btn.addEventListener('click', () =>{
         btn.parentElement.parentElement.classList.remove('open-modal')
+        document.body.style.overflow = 'auto'
+
     })
 }) //close modal
 
 window.addEventListener('click', (e) => {
     if( e.target.classList.contains('portfolio-modal-container')){
         e.target.classList.remove('open-modal')
+        document.body.style.overflow = 'auto'
     }
 }) //closing modals on click outside
 
 
-//form validation
-const form = document.querySelector('form')
-const validationMessage = document.querySelector('.validation-message')
+//3d-animation
+const container = document.querySelector('.btn-3d-container')
+const holder = document.querySelector('.btn-3d-holder')
+const img = document.querySelector('.btn-3d-holder img')
+const threeD = document.querySelector('.btn-3d')
 
-function validateForm(){
-    form.hidden = true
-    validationMessage.hidden = false
-}
+container.addEventListener('mousemove', (e) =>{
+    let xAxis = ( window.innerWidth / 2 - e.offsetX ) / 30
+    let yAxis = ( window.innerHeight / 2 - e.offsetY ) / 30
+    container.style.transform = `rotateY(${-yAxis - 15}deg) rotateX(${-xAxis + 15}deg)`
+})
 
-form.addEventListener('submit', validateForm)
+container.addEventListener('mouseenter', () =>{
+    holder.style.transition = `none`
+    holder.style.transform = 'translateZ(100px) rotateZ(5deg)'
+    threeD.style.transform = 'translateZ(150px) rotateZ(-10deg)'
+    img.style.objectFit = 'cover'
+})
+
+container.addEventListener('mouseleave', () =>{
+    container.style.transform = `rotateY(0deg) rotateX(0deg)`
+    holder.style.transition = `all 0.75s ease-out`
+    holder.style.transform = `translateZ(0px) rotateZ(0deg)`
+    threeD.style.transform = 'translateZ(0px) rotateZ(0deg)'
+    img.style.objectFit = 'contain'
+})
 
 //current year footer
 const currentYear = document.querySelector('.current-year')
@@ -164,3 +184,7 @@ const date = new Date()
 const year = date.getFullYear()
 
 currentYear.textContent = year
+
+//go to top
+const toTop = document.querySelector('.to-top')
+toTop.addEventListener('click', () =>{ window.scrollTo(0, 0) })
