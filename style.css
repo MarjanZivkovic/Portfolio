@@ -333,6 +333,12 @@ nav ul li a:hover, .language-select:hover{
 .clock{
     background: url(assets/clock.jpg) no-repeat center center / cover;
 }
+.cooking-ideas{
+    background: url(assets/cooking-ideas.jpg) no-repeat center top / cover;
+}
+.football-tips{
+    background: url(assets/football-tips.jpg) no-repeat center top / cover;
+}
 .portfolio-hover{
     position: absolute;
     width: 100%;
@@ -419,6 +425,12 @@ nav ul li a:hover, .language-select:hover{
 }
 .modal-content h3{
     margin: 0 0 0.5rem;
+}
+.modal-content a{
+    text-decoration: underline;
+}
+.modal-content a.btn{
+    text-decoration: none;
 }
 .modal-icon{
     font-size: 1.4rem;
