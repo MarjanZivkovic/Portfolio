@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Marjan is a front-end developer located in Serbia - a certified JavaScript developer. Complete coding and web design solutions for your website">
-    <meta name="keywords" content="developer, JavaScript">
+    <meta name="description" content="Marjan je web developer iz Srbije. Kompletna izrada modernih vebsajtova koji inspirišu. Sajt na srpskom i engleskom. Ekspert u HTML-u, CSS-u, JavaScript-u i novim veb tehnologijama. Kontaktirajte me danas da dobijete najbolje uslove.">
+    <meta name="keywords" content="izrada vebsajtova, web developer, JavaScript">
     <meta name="theme-color" content="#010101">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="assets/logo-green.svg" type="image/svg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <title>Marjan Zivkovic</title>
+    <title>Marjan Zivkovic - Front-end developer</title>
 </head>
 <body>
     <!-- menu button -->
@@ -18,18 +18,18 @@
     <!-- navigtion -->
     <nav>
         <ul class="main-nav">
-            <li class="eng-item"><a href="#about">About me</a></li>
+            <li class="eng-item"><a href="#about">About</a></li>
             <li class="srb-item"><a href="#about">O meni</a></li>
             <li class="eng-item"><a href="#portfolio">Portfolio</a></li>
             <li class="srb-item"><a href="#portfolio">Portfolio</a></li>
-            <li class="eng-item"><a href="#edu">Dev edu</a></li>
-            <li class="srb-item"><a href="#edu">IT edukacija</a></li>
-            <li class="eng-item"><a href="#contact">Contact me</a></li>
+            <li class="eng-item"><a href="#packages">Packages</a></li>
+            <li class="srb-item"><a href="#packages">Paketi</a></li>
+            <li class="eng-item"><a href="#contact">Contact</a></li>
             <li class="srb-item"><a href="#contact">Kontakt</a></li>
             <li class="lang-li">
                 <select class="language-select"  name="language">
-                    <option value="eng">Eng</option>
                     <option value="srb">Srb</option>
+                    <option value="eng">Eng</option>
                 </select>
             </li>
             <li><span class="blink-cursor" id="hidden-cursor"></span></li> 
@@ -43,28 +43,59 @@
     <!-- empty section -->
     <div class="nav-active">&nbsp;</div>
     <!-- welcome section -->
-    <section id="about" class="welcome nav-active">
-        <div class="hi-div transformed">
-            <h1 class="eng-item"> <span class="hi"> Hi,</span> <br> <span class="i-am">I'm Marjan,</span>  <br>a front-end developer</h1>
-            <h1 class="srb-item"> <span class="hi"> Zdravo,</span> <br> <span class="i-am">ja sam Marjan,</span>  <br> frontend developer</h1>
+    <section id="about" class="nav-active">
+        <div class="welcome">
+            <div class="hi-div transformed">
+                <h1 class="eng-item"> <span class="hi"> Hi,</span> <br> <span class="i-am">I'm Marjan,</span>  <br>a front-end developer</h1>
+                <h1 class="srb-item"> <span class="hi"> Zdravo,</span> <br> <span class="i-am">ja sam Marjan,</span>  <br> frontend developer</h1>
+            </div>
+            <div class="gradient transformed"></div>
+            <div>
+                <img src="assets/marjan.png" alt="Marjan Zivkovic">
+            </div>
+            <div class="hire-me transformed">
+                <p class="eng-item">If you want a website that looks clean, interactive, and beautiful on all devices <span class="arrow-down"><i class="fa-solid fa-turn-down"></i></span></p>
+                <p class="srb-item">Ako želite da Vaš vebsajt bude uredan, interaktivan i izgleda dobro nas svim uređajima <span class="arrow-down"><i class="fa-solid fa-turn-down"></i></span></p>
+                <span class="eng-item"><a class="btn eng-item" href="#contact">Hire me</a></span>
+                <span class="srb-item"><a class="btn srb-item" href="#contact">Angažujte me</a></span>
+            </div>
         </div>
-        <div class="gradient transformed"></div>
-        <div>
-            <img src="assets/marjan.png" alt="Marjan Zivkovic">
-        </div>
-        <div class="hire-me transformed">
-            <p class="eng-item">If you want a website that looks clean, interactive, and beautiful on all devices <span class="arrow-down"><i class="fa-solid fa-turn-down"></i></span></p>
-            <p class="srb-item">Ako želite da Vaš vebsajt bude uredan, interaktivan i izgleda dobro nas svim uređajima <span class="arrow-down"><i class="fa-solid fa-turn-down"></i></span></p>
-            <span class="eng-item"><a class="btn eng-item" href="#contact">Hire me</a></span>
-            <span class="srb-item"><a class="btn srb-item" href="#contact">Angažujte me</a></span>
+        <div class="slogan">
+            <div class="short-slogan">
+                <div class="eng-item">
+                    <h2><span>ANIMATE</span></h2>
+                    <h2><span>YOUR</span></h2>
+                    <h2><span>CUSTOMERS</span></h2>
+                </div>
+                <div class="srb-item">
+                    <h2><span>ANIMIRAJTE</span></h2>
+                    <h2><span>VAŠE</span></h2>
+                    <h2><span>KUPCE</span></h2>
+                </div>
+            </div>
+            <div class="slider"></div>
+            <div class="sales-copy">
+                <div class="srb-item">
+                    <p>
+                        <span> <strong>Pomoći ću Vam</strong> da se veb prezentacija Vaše kompanije izdvoji iz gomile monotonih, beživotnih sajtova. Dobićete vebsajt o kome se govori! Potencijalni kupci iz celog sveta će na lak način moći da vide Vašu ponudu i saznaju kako najlakše doći do Vas. <br><br> Moj tim i ja vredno radimo na ispunjenju svih Vaših zahteva i nećemo stati sve dok ne budete 100% zadovoljni. <br> <em class="faded-text">Požurite i iskoristite akcijske cene!</em></span>
+                        <a href="#packages" class="btn">Pogledajte naše pakete <span class="arrow-down"><i class="fa-solid fa-turn-down"></i></span></a> 
+                    </p>
+                </div>
+                <div class="eng-item">
+                    <p>
+                        <span><strong>I will help</strong> your website stand out from the crowd of monotonous, lifeless websites. You will get the website that people talk about! Potential buyers from all over the world will be able to easily see your offer and find out the easiest way to reach you. <br><br> My team and I work hard to fulfill all your requirements and we will not stop until you are 100% satisfied. <br> <em class="faded-text">Hurry up and take advantage of the special prices!</em></span>
+                        <a href="#packages" class="btn">Check out our packages <span class="arrow-down"><i class="fa-solid fa-turn-down"></i></span></a> 
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
     <!-- portfolio -->
     <main class="portfolio nav-active" id="portfolio">
         <div class="portfolio-hero-div">
             <div>
-                <h2 class="eng-item">Check out my projects</h2>
-                <h2 class="srb-item">Neki od mojih projekata</h2>
+                <h2 class="eng-item">Check out my projects <i class="fa-solid fa-gear fa-spin"></i><i class="fa-solid fa-gear fa-spin fa-spin-reverse"></i></h2>
+                <h2 class="srb-item">Neki od mojih projekata <i class="fa-solid fa-gear fa-spin"></i><i class="fa-solid fa-gear fa-spin fa-spin-reverse"></i></h2>
             </div>
             <div class="portfolio-matrix transformed"></div>
         </div>
@@ -199,8 +230,8 @@
                         <div class="srb-item"><i class="fa-solid fa-comment modal-icon"></i>
                             Ukoliko imate priliku probajte Lazareve proizvode. Još su bolji od ovog web dizajna.
                         </div>
-                        <div class="eng-item"><a class="btn" href="https://marjanzivkovic.github.io/Lazar-Blace/" target="_blank">Visit page</a></div>
-                        <div class="srb-item"><a class="btn" href="https://marjanzivkovic.github.io/Lazar-Blace/" target="_blank">Poseti stranicu</a></div>
+                        <div class="eng-item"><a class="btn" href="https://marjanzivkovic.github.io/lazar/" target="_blank">Visit page</a></div>
+                        <div class="srb-item"><a class="btn" href="https://marjanzivkovic.github.io/lazar/" target="_blank">Poseti stranicu</a></div>
                     </div>
                 </div>
             </div>
@@ -327,98 +358,177 @@
     </main>
     <!-- green background -->
     <div class="edu-green-slope"></div> 
-    <!-- Dev education -->
-    <section class="edu nav-active" id="edu">
+    <!-- Packages  (used to be EDU section, same classes for simplicity) -->
+    <section class="edu nav-active" id="packages">
         <div class="edu-hero-div"> 
             <div>
-                <h2 class="eng-item">Developer education</h2>
-                <h2 class="srb-item">IT edukacija</h2>
+                <h2 class="eng-item">Our packages <i class="fa-solid fa-box-open fa-bounce"></i></h2>
+                <h2 class="srb-item">Naši paketi <i class="fa-solid fa-box-open fa-bounce"></i></h2>
             </div>
             <div class="portfolio-matrix transformed"></div>
         </div>
         <div class="edu-container">
-            <div class="edu-item">
-                <div class="edu-item">
-                    <a class="transformed" href="https://www.it-akademija.com/" target="_blank"><img src="assets/ita.png" alt="ITA logo"></a>
-                    <div class="edu-description">
-                        <h3>Frontend JavaScript Development</h3>
-                        <div class="eng-item"><i class="fa-regular fa-building"></i> ITAcademy, LINK group</div>
-                        <div class="srb-item"><i class="fa-regular fa-building"></i> ITAcademija, LINK grupa</div>
-                        <div><i class="fa-solid fa-chalkboard-user"></i> Vuk Ninić, Dušan Čoko</div>
-                        <div><i class="fa-regular fa-calendar-days"></i> 2021/2022</div>
-                        <div class="eng-item" title="status"><i class="fa-solid fa-check-double"></i> Finished</div>
-                        <div class="srb-item" title="status"><i class="fa-solid fa-check-double"></i> Završen</div>
-                        <div class="eng-item"><i class="fa-solid fa-file-pdf"></i><a href="pdfs/ITA_Certificate.pdf" target="_blank"> Download certificate</a></div>
-                        <div class="srb-item"><i class="fa-solid fa-file-pdf"></i><a href="pdfs/ITA_Certificate.pdf" target="_blank"> Preuzmi sertifikat</a></div>
+           <p class="eng-item">Our packages are tailored specifically for small and medium-sized companies, entrepreneurs, non-profit organizations... In other words, for all those who want their place on the Internet, but do not have enough resources and/or time. <br><br> Don't worry, we are here to do the heavy lifting for you. We will write texts that inspire, slogans that motivate, we will create images that draw attention, we will even translate it all into English and make your website understandable to the whole world. You'll get a website to be proud of!</p> 
+           <p class="srb-item">Naši paketi skrojeni su specijalno za mala i srednja preduzeća, preduzetnike, neprofitne organizacije, udruženja... Drugim rečima za sve one koji žele svoje mesto na internetu, a nemaju dovoljno resursa i/ili vremena. <br><br> Ne brinite mi smo tu da obavljamo teške poslove za Vas. Napisaćemo tekstove koje inspirišu, slogane koji nadahnjuju, napravićemo slike koje skreću pažnju, čak ćemo i sve to prevesti na engleski i učiniti Vaš vebsajt razumljiv celom svetu. Dobićete vebsajt na koji ćete biti ponosni!</p> 
+           <p class="hurry-call eng-item">Hurry up to take advantage of the promotional prices of our packages!</p>
+           <p class="hurry-call srb-item">Požurite i iskoristite promotivne cene naših paketa!</p>
+           <div>
+                <h3 class="eng-item">Choose your package</h3>
+                <h3 class="srb-item">Izaberite svoj paket</h3>
+                <div class="packages-container">
+                    <div>
+                        <h3>Basic</h3>
+                        <ul class="package basic">
+                            <li class="eng-item provided">Complete building of a website</li>
+                            <li class="srb-item provided">Kompletna izrada sajta</li>
+                            <li class="eng-item provided">Design customization</li>
+                            <li class="srb-item provided">Prilagođavanje dizajna</li>
+                            <li class="eng-item provided">Innovative UI/UX design</li>
+                            <li class="srb-item provided">Inovativni UI/UX dizajn</li>
+                            <li class="eng-item provided">Responsive (mobile friendly) design</li>
+                            <li class="srb-item provided">Responsivni ( prilagođen za telefon ) dizajn</li>
+                            <li class="eng-item provided">Clean, easy-to-maintain code</li>
+                            <li class="srb-item provided">Čist kod, lak za održavanje</li>
+                            <li class="eng-item not-provided">Fast performance website</li>
+                            <li class="srb-item not-provided">Vebsajt dobrih performansi</li>
+                            <li class="eng-item not-provided">Animations</li>
+                            <li class="srb-item not-provided">Animacije</li>
+                            <li class="eng-item provided">Content provided by the client</li>
+                            <li class="srb-item provided">Sadržaj obezbeđuje klijent</li>
+                            <li class="eng-item not-provided">Content creation by us</li>
+                            <li class="srb-item not-provided">Mi obezbeđujemo sadržaj</li>
+                            <li class="eng-item not-provided">Pictures and video editing</li>
+                            <li class="srb-item not-provided">Priprema slika i videa</li>
+                            <li class="eng-item not-provided">Multi-language website</li>
+                            <li class="srb-item not-provided">Vebsajt na više jezika</li>
+                            <li class="eng-item not-provided">Our translation into English</li>
+                            <li class="srb-item not-provided">Naš prevod na engleski</li>
+                            <li class="eng-item not-provided">Providing free web hosting</li>
+                            <li class="srb-item not-provided">Obezbeđivanje besplatnog hostinga</li>
+                            <li class="eng-item not-provided">Help to get a domain name</li>
+                            <li class="srb-item not-provided">Pomoć u obezbeđivanju domenskog imena</li>
+                            <li class="eng-item provided">Source codes delivered to the client</li>
+                            <li class="srb-item provided">Isporuka svih fajlova sa kodom klijentu</li>
+                            <li class="eng-item provided">Fast delivery</li>
+                            <li class="srb-item provided">Brza izrada</li>
+                            <li class="eng-item order">
+                                Now only<sup>*</sup><strong>200&euro;</strong>
+                                <a href="https://form.jotform.com/230432288587059" target="_blank">Order</a>
+                            </li>
+                            <li class="srb-item order">
+                                Sada samo<sup>*</sup><strong>200&euro;</strong>
+                                <a href="https://form.jotform.com/230432288587059" target="_blank">Naruči</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="chosen-package">
+                        <h3>Standard</h3>
+                        <ul class="package standard">
+                            <li class="eng-item provided">Complete building of a website</li>
+                            <li class="srb-item provided">Kompletna izrada sajta</li>
+                            <li class="eng-item provided">Design customization</li>
+                            <li class="srb-item provided">Prilagođavanje dizajna</li>
+                            <li class="eng-item provided">Innovative UI/UX design</li>
+                            <li class="srb-item provided">Inovativni UI/UX dizajn</li>
+                            <li class="eng-item provided">Responsive (mobile friendly) design</li>
+                            <li class="srb-item provided">Responsivni ( prilagođen za telefon ) dizajn</li>
+                            <li class="eng-item provided">Clean, easy-to-maintain code</li>
+                            <li class="srb-item provided">Čist kod, lak za održavanje</li>
+                            <li class="eng-item provided">Fast performance website</li>
+                            <li class="srb-item provided">Vebsajt dobrih performansi</li>
+                            <li class="eng-item provided">Animations</li>
+                            <li class="srb-item provided">Animacije</li>
+                            <li class="eng-item provided">Content provided by the client</li>
+                            <li class="srb-item provided">Sadržaj obezbeđuje klijent</li>
+                            <li class="eng-item not-provided">Content creation by us</li>
+                            <li class="srb-item not-provided">Mi obezbeđujemo sadržaj</li>
+                            <li class="eng-item provided">Pictures and video editing</li>
+                            <li class="srb-item provided">Priprema slika i videa</li>
+                            <li class="eng-item provided">Multi-language website</li>
+                            <li class="srb-item provided">Vebsajt na više jezika</li>
+                            <li class="eng-item not-provided">Our translation into English</li>
+                            <li class="srb-item not-provided">Naš prevod na engleski</li>
+                            <li class="eng-item not-provided">Providing free web hosting</li>
+                            <li class="srb-item not-provided">Obezbeđivanje besplatnog hostinga</li>
+                            <li class="eng-item provided">Help to get a domain name</li>
+                            <li class="srb-item provided">Pomoć u obezbeđivanju domenskog imena</li>
+                            <li class="eng-item provided">Source codes delivered to the client</li>
+                            <li class="srb-item provided">Isporuka svih fajlova sa kodom klijentu</li>
+                            <li class="eng-item provided">Fast delivery</li>
+                            <li class="srb-item provided">Brza izrada</li>
+                            <li class="eng-item order">
+                                Now only<sup>*</sup><strong>400&euro;</strong>
+                                <a href="https://form.jotform.com/230432288587059" target="_blank">Order</a>
+                            </li>
+                            <li class="srb-item order">
+                                Sada samo<sup>*</sup><strong>400&euro;</strong>
+                                <a href="https://form.jotform.com/230432288587059" target="_blank">Naruči</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Premium</h3>
+                        <ul class="package premium">
+                            <li class="eng-item provided">Complete building of a website</li>
+                            <li class="srb-item provided">Kompletna izrada sajta</li>
+                            <li class="eng-item provided">Design customization</li>
+                            <li class="srb-item provided">Prilagođavanje dizajna</li>
+                            <li class="eng-item provided">Innovative UI/UX design</li>
+                            <li class="srb-item provided">Inovativni UI/UX dizajn</li>
+                            <li class="eng-item provided">Responsive (mobile friendly) design</li>
+                            <li class="srb-item provided">Responsivni ( prilagođen za telefon ) dizajn</li>
+                            <li class="eng-item provided">Clean, easy-to-maintain code</li>
+                            <li class="srb-item provided">Čist kod, lak za održavanje</li>
+                            <li class="eng-item provided">Fast performance website</li>
+                            <li class="srb-item provided">Vebsajt dobrih performansi</li>
+                            <li class="eng-item provided">Animations</li>
+                            <li class="srb-item provided">Animacije</li>
+                            <li class="eng-item provided">Content provided by the client</li>
+                            <li class="srb-item provided">Sadržaj obezbeđuje klijent</li>
+                            <li class="eng-item provided">Content creation by us</li>
+                            <li class="srb-item provided">Mi obezbeđujemo sadržaj</li>
+                            <li class="eng-item provided">Pictures and video editing</li>
+                            <li class="srb-item provided">Priprema slika i videa</li>
+                            <li class="eng-item provided">Multi-language website</li>
+                            <li class="srb-item provided">Vebsajt na više jezika</li>
+                            <li class="eng-item provided">Our translation into English</li>
+                            <li class="srb-item provided">Naš prevod na engleski</li>
+                            <li class="eng-item provided">Providing free web hosting</li>
+                            <li class="srb-item provided">Obezbeđivanje besplatnog hostinga</li>
+                            <li class="eng-item provided">Help to get a domain name</li>
+                            <li class="srb-item provided">Pomoć u obezbeđivanju domenskog imena</li>
+                            <li class="eng-item provided">Source codes delivered to the client</li>
+                            <li class="srb-item provided">Isporuka svih fajlova sa kodom klijentu</li>
+                            <li class="eng-item provided">Fast delivery</li>
+                            <li class="srb-item provided">Brza izrada</li>
+                            <li class="eng-item order">
+                                Now only<sup>*</sup><strong>600&euro;</strong>
+                                <a href="https://form.jotform.com/230432288587059" target="_blank">Order</a>
+                            </li>
+                            <li class="srb-item order">
+                                Sada samo<sup>*</sup><strong>600&euro;</strong>
+                                <a href="https://form.jotform.com/230432288587059" target="_blank">Naruči</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <div class="edu-item">
-                    <div class="edu-description">
-                        <h3 class="eng-item">50 Projects In 50 Days, HTML, CSS &amp;JS</h3>
-                        <h3 class="srb-item">50 Projekata u 50 Dana, HTML, CSS &amp;JS</h3>
-                        <div><i class="fa-regular fa-building"></i> Traversy Media, Udemy</div>
-                        <div><i class="fa-solid fa-chalkboard-user"></i> Brad Traversy, Florin Pop</div>
-                        <div><i class="fa-regular fa-calendar-days"></i> 2022</div>
-                        <div class="eng-item" title="status"><i class="fa-solid fa-check-double"></i> Finished</div>
-                        <div class="srb-item" title="status"><i class="fa-solid fa-check-double"></i> Završen</div>
-                        <div class="eng-item"><i class="fa-solid fa-file-pdf"></i><a href="pdfs/50_projects_certificate.pdf" target="_blank"> Download certificate</a></div>
-                        <div class="srb-item"><i class="fa-solid fa-file-pdf"></i><a href="pdfs/50_projects_certificate.pdf" target="_blank"> Preuzmi sertifikat</a></div>
-                    </div>
-                    <a class="transformed moved-right" href="https://www.traversymedia.com/" target="_blank"><img src="assets/traversy.jpg" alt="Traversy logo"></a> 
-                </div>
+                <p class="disclaimer eng-item"><sup>*</sup>Prices are subject to change depending on the size of the site and required functionalities.</p>
+                <p class="disclaimer srb-item"><sup>*</sup>Cene su podložne izmenama zavisno od veličine sajta i zahtevanih funkcionalnosti.</p>
             </div>
-            <div class="edu-item">
-                <div class="edu-item">
-                    <a class="transformed" href="https://zerotomastery.io/" target="_blank"><img src="assets/ztm.png" alt="ZTM logo"></a> 
-                    <div class="edu-description">
-                        <h3 class="eng-item" title="JavaScript Web Projects: 20 Projects to Build Your Portfolio">JavaScript Web Projects: 20 Projects...</h3>
-                        <h3 class="srb-item" title="JavaScript Web Projekti: 20 Projekata da izgradite Vaš Portfolio">JavaScript Web Projekti: 20 Projekata...</h3>
-                        <div><i class="fa-regular fa-building"></i> ZTM Academy, Udemy</div>
-                        <div><i class="fa-solid fa-chalkboard-user"></i> Andrei Neagoie, Jacinto Wong</div>
-                        <div><i class="fa-regular fa-calendar-days"></i> 2022</div>
-                        <div class="eng-item" title="status"><i class="fa-solid fa-check-double"></i> Finished</div>
-                        <div class="srb-item" title="status"><i class="fa-solid fa-check-double"></i> Završen</div>
-                        <div class="eng-item"><i class="fa-solid fa-file-pdf"></i><a href="pdfs/JS_web_projects_certificate.pdf" target="_blank"> Download certificate</a></div>
-                        <div class="srb-item"><i class="fa-solid fa-file-pdf"></i><a href="pdfs/JS_web_projects_certificate.pdf" target="_blank"> Preuzmi sertifikat</a></div>
-                    </div>
+            <div class="seal-container">
+                <img class="seal" src="assets/guarantee.svg" alt="guarantee-seal">
+                <div class="seal-text">
+                    <div class="eng-item">Our clients' satisfaction is our no.1 priority. You will only pay if you are 100% satisfied with the final look and functionalities of your new website.</div>
+                    <div class="srb-item">Zadovoljstvo naših klijenata je naš prioritet br.1. Platićete samo ako ste 100% zadovoljni konačnim izgledom i funkcionalnostima Vašeg novog vebsajta.</div>
                 </div>
-                <div class="edu-item">
-                    <div class="edu-description">
-                        <h3 class="eng-item">React - The Complete Guide</h3>
-                        <h3 class="srb-item">React - Kompletan vodič</h3>
-                        <div><i class="fa-regular fa-building"></i> Academind, Udemy</div>
-                        <div><i class="fa-solid fa-chalkboard-user"></i> Maximilian Schwarzmüller</div>
-                        <div><i class="fa-regular fa-calendar-days"></i> 2022/2023</div>
-                        <div class="eng-item" title="status"><i class="fa-solid fa-check"></i> In progress</div>
-                        <div class="srb-item" title="status"><i class="fa-solid fa-check"></i> U toku</div>
-                        <div><i class="fa-solid fa-file-pdf"></i> ---</div>
-                    </div>
-                    <a class="transformed moved-right" href="https://academind.com/" target="_blank"><img src="assets/max.jpg" alt="Maximilian logo"></a> 
-                </div>
-            </div>
-            <div class="edu-item">
-                <div class="edu-item">
-                    <a class="transformed" href="https://www.traversymedia.com/" target="_blank"><img src="assets/traversy.jpg" alt="Traversy logo"></a>
-                    <div class="edu-description">
-                        <h3 class="eng-item">React Front To Back 2022</h3>
-                        <h3 class="srb-item">React od Front-a ka Back-u 2022</h3>
-                        <div><i class="fa-regular fa-building"></i> Traversy Media, Udemy</div>
-                        <div><i class="fa-solid fa-chalkboard-user"></i> Brad Traversy</div>
-                        <div><i class="fa-regular fa-calendar-days"></i> 2023</div>
-                        <div class="eng-item" title="status"><i class="fa-solid fa-minus"></i> Next</div>
-                        <div class="srb-item" title="status"><i class="fa-solid fa-minus"></i> Sledeći</div>
-                        <div><i class="fa-solid fa-file-pdf"></i> ---</div>
-                    </div>
-                </div>
-                <div class="edu-item">&nbsp;</div>
             </div>
         </div>
     </section>
     <div class="edu-green-slope"></div> 
     <!-- contact -->
     <section class="contact nav-active" id="contact">
-        <h2 class="eng-item">Contact me</h2>
-        <h2 class="srb-item">Kontaktirajte me</h2>
+        <h2 class="eng-item">Contact me <i class="fa-solid fa-phone-flip fa-shake"></i></h2>
+        <h2 class="srb-item">Kontaktirajte me <i class="fa-solid fa-phone-flip fa-shake"></i></h2>
         <div class="contact-flex">
             <div class="contact-info">
                 <h3 class="eng-item">Marjan Zivkovic</h3>
@@ -429,8 +539,8 @@
                 <div><i class="fa-solid fa-at"></i> zivkovicmarjan@yahoo.com</div>
             </div>
             <div class="contact-text transformed"> 
-                <p class="eng-item">I'm interested in working for an innovative and dynamic company where I can hone my skills and improve both as a developer and a person. Until I find that place, I'm available as a freelancer for smaller projects.</p>
-                <p class="srb-item">Zainteresovan sam za posao u inovativnoj i dinamičnoj kompaniji gde mogu da usavršavam svoje veštine i da napredujem kao developer i kao osoba. Dok ne pronađem takvo mesto, dostupan sam kao freelancer na manjim projektima.</p>
+                <p class="eng-item">I offer a unique combination of passion for development and creativity. Whether you're looking for a full-time front-end developer to join your team, or a reliable freelancer to bring your web development projects to life, I have the skills and experience to deliver results. Let's work together to create websites that engage and inspire!</p>
+                <p class="srb-item">Ono što ja mogu da ponudim je jedistvena kombinacija strasti za veb-development i kreativnosti. Bilo da Vam treba developer koji će se pridružiti Vašem timu puno radno vreme ili pouzdani freelance-r, ja imam veštine i iskustvo da isporučim rezultat. Hajde da radimo zajedno na kreiranju vebsajtova koji angažuju i inspirišu!</p>
             </div>
         </div>
         <div class="contact-form transformed">
@@ -454,6 +564,7 @@
         </footer>
     </section>    
     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script.js"></script>
 </body>
 </html>

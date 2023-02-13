@@ -3,7 +3,7 @@ const engItems = document.querySelectorAll('.eng-item')
 const srbItems = document.querySelectorAll('.srb-item')
 const selectLanguageButton = document.querySelector('.language-select')
 
-srbItems.forEach( item => { item.setAttribute('lang' , 'sr')}) //setting serbian lang attribute
+engItems.forEach( item => { item.setAttribute('lang' , 'en')}) //setting english lang attribute
 
 function showEnglish(){
     srbItems.forEach( item => { item.classList.add('none')})
@@ -20,22 +20,24 @@ selectLanguageButton.addEventListener('change', () => {
     if ( selectLanguageButton.value === 'eng' ){
         showEnglish()
         localStorage.setItem( 'lang', selectLanguageButton.value )
-        selectLanguageButton.children[0].selected = true
+        selectLanguageButton.children[1].selected = true
         quoteText.textContent = quoteEn
     } else {
         showSerbian()
         localStorage.setItem( 'lang', selectLanguageButton.value )
+        selectLanguageButton.children[0].selected = true
         quoteText.textContent = quoteSr
     }
 })
 
     //geting language from LStorage
 let chosenLang = localStorage.getItem('lang')
-if ( chosenLang === 'srb' ){
-    showSerbian()
+if ( chosenLang === 'eng' ){
+    showEnglish()
     selectLanguageButton.children[1].selected = true
 } else {
-    showEnglish()
+    showSerbian()
+    selectLanguageButton.children[0].selected = true
 }
 
 
@@ -59,18 +61,18 @@ const quoteSr = '"Istina se može naći na samo jednom mestu: u kodu"  '
 
 
 function writeQuote(){
-    if ( chosenLang === 'srb' ){
-        quoteText.textContent = quoteSr.slice(0, indexOfText)
-        indexOfText++
-        
-        if( indexOfText > quoteSr.length ){
-            return;
-        }
-    } else {
+    if ( chosenLang === 'eng' ){
         quoteText.textContent = quoteEn.slice(0, indexOfText)
         indexOfText++
         
         if( indexOfText > quoteEn.length ){
+            return;
+        }
+    } else {
+        quoteText.textContent = quoteSr.slice(0, indexOfText)
+        indexOfText++
+        
+        if( indexOfText > quoteSr.length ){
             return;
         }
     }
@@ -123,6 +125,54 @@ function removeActiveLinks(){
 
 window.addEventListener('scroll', changeActiveNavLinks) //change active nav links
 
+// GSAP animations, slogan + seal
+const sloganScreen = document.querySelector('.slogan')
+const sealScreen = document.querySelector('.seal-container')
+const halfScreen = window.innerHeight / 2
+let animationSloganOver = false
+let animationSealOver = false
+
+function animatedSlogan(){
+    const sloganTop = sloganScreen.getBoundingClientRect().top + 20
+
+    if ( sloganTop < halfScreen ){
+        let tl = gsap.timeline()
+
+        tl.to( '.short-slogan div h2 span', 2, { y: "0", stagger: 0.5 } )
+        .to( '.short-slogan', 1, { y: "-100%"})
+        .to( '.slider', 0.5, { y: "100%" } )
+        .to( '.sales-copy', 4, { y: "0" , ease: "bounce.out"} )
+        .to( '.sales-copy p', 2, { y: "0" , ease: "bounce.out"}, "-=2")
+        .to( '.sales-copy p span', 2, { y: "0"}, "-=1" ) 
+        .to( '.sales-copy p a', 2, { y: "0", ease: "bounce.out"}, "-=1" )
+
+        animationSloganOver = true
+    } 
+}
+
+function animatedSeal(){
+    const sealTop = sealScreen.getBoundingClientRect().top
+
+    if ( sealTop < halfScreen ){
+        let tl = gsap.timeline()
+        
+        tl.fromTo( '.seal', 0.25, { y: "-200vh", x: "100vw", opacity:"0"}, {y: "0", x: "0", opacity: "1"} )
+        .fromTo( '.seal-container', 0.05, { rotation: -10}, {rotation: 0, repeat: 4, yoyo: true} )
+        .to ( '.seal-text', 2, { opacity: "1", delay: 1})
+
+        animationSealOver = true
+    }
+}
+
+window.addEventListener('scroll', () =>{
+    if (!animationSloganOver){
+        animatedSlogan()
+    }
+
+    if(!animationSealOver){
+        animatedSeal()
+    }
+})
 
 //modal portfolio windows handler
 const cards = document.querySelectorAll('.portfolio-cards')
@@ -150,8 +200,22 @@ window.addEventListener('click', (e) => {
     }
 }) //closing modals on click outside
 
+// packages active
+const packages = document.querySelectorAll('.package')
 
-//3d-animation
+function removeChosenPackage(){
+    packages.forEach( pack => { pack.parentNode.classList.remove('chosen-package') } )
+}
+
+packages.forEach( pack => {
+    pack.addEventListener('click', () =>{
+        removeChosenPackage()
+        pack.parentNode.classList.add('chosen-package')
+    })
+} )
+
+
+//3d-animation contact
 const container = document.querySelector('.btn-3d-container')
 const holder = document.querySelector('.btn-3d-holder')
 const img = document.querySelector('.btn-3d-holder img')
