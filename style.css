@@ -15,7 +15,7 @@
     outline: none;
 }
 *::selection{
-    background-color: var(--primary-black);
+    background-color: var(--primary-green);
     color: #fff;
 }
 html{
@@ -338,6 +338,9 @@ nav ul li a:hover, .language-select:hover{
     margin: 1rem auto;
     width: auto;
 }
+.play-again-btn{
+    opacity: 0;
+}
 /* portfolio section */
     /*portfolio on main screen*/
 .portfolio-hero-div, .edu-hero-div{
@@ -415,15 +418,16 @@ nav ul li a:hover, .language-select:hover{
 .lazar{
     background: url(assets/lazar.jpg) no-repeat center top / cover;
 }
-.clock{
-    background: url(assets/clock.jpg) no-repeat center center / cover;
-}
 .cooking-ideas{
     background: url(assets/cooking-ideas.jpg) no-repeat center top / cover;
 }
 .football-tips{
     background: url(assets/football-tips.jpg) no-repeat center top / cover;
 }
+.todos{
+    background: url(assets/todos.jpg) no-repeat center top / cover;
+}
+
 .portfolio-hover{
     position: absolute;
     width: 100%;
@@ -619,8 +623,9 @@ nav ul li a:hover, .language-select:hover{
     margin-top: 2rem;
 }
 .order strong{
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     padding: 0 0.5rem;
+    font-family: 'Ubuntu', sans-serif;
 }
 .order a{
     display: block;
@@ -712,6 +717,7 @@ nav ul li a:hover, .language-select:hover{
 }
 .contact-text{
     font-family: 'Ubuntu', sans-serif;
+    text-align: justify;
     line-height: 1.5;
     opacity: 0;
     width: 60%;
@@ -720,6 +726,16 @@ nav ul li a:hover, .language-select:hover{
     color: var(--primary-black);
     border-radius: 10px;
     box-shadow:  0 0 10px rgba(100, 216, 107, 0.4);
+}
+.competency{
+    font-size: 1.2rem;
+    padding-top: 0.5rem;
+    margin-top: 1rem;
+    border-top: 1px solid;
+}
+.competency i{
+    font-size: 1.5rem;
+    margin: 0 1rem;
 }
 .contact-form{
     width: 50%;
