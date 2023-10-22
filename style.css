@@ -381,11 +381,11 @@ nav ul li a:hover, .language-select:hover{
     opacity: 0;
     margin: 2rem 0;
 }
-.portfolio-cards:last-of-type{
-    transform: translate(0, -50%);
-    background: url(assets/matrix.jpg) repeat left center / contain;
-    min-height: 15rem;
-    margin-top: 8rem;
+.portfolio-cards:nth-child(2n){
+    margin: 4rem 0 10rem;
+}
+.portfolio-cards:nth-child(4n){
+    margin: 10rem 0 4rem;
 }
 .portfolio-website{
     position: relative;
@@ -400,12 +400,6 @@ nav ul li a:hover, .language-select:hover{
     background-color: rgba(1, 1, 1, 0.8);
     padding: 0.5rem;
 }
-.mb-10{
-    margin-bottom: 8rem;
-} 
-.mt-10{
-    margin-top: 8rem;
-}
 .aj{
     background: url(assets/aj-tribute.jpg) no-repeat right top / cover;
 }
@@ -415,8 +409,11 @@ nav ul li a:hover, .language-select:hover{
 .fetch{
     background: url(assets/quotes.jpg) no-repeat center center / cover;
 }
-.lazar{
+/* .lazar{
     background: url(assets/lazar.jpg) no-repeat center top / cover;
+} */
+.milenkovic{
+    background: url(assets/milenkovic.jpg) no-repeat center center / cover;
 }
 .cooking-ideas{
     background: url(assets/cooking-ideas.jpg) no-repeat center top / cover;
@@ -427,7 +424,9 @@ nav ul li a:hover, .language-select:hover{
 .todos{
     background: url(assets/todos.jpg) no-repeat center top / cover;
 }
-
+.sody{
+    background: url(assets/sody.jpg) no-repeat center top / cover;
+}
 .portfolio-hover{
     position: absolute;
     width: 100%;
@@ -474,7 +473,7 @@ nav ul li a:hover, .language-select:hover{
 }
 .portfolio-modal{
     opacity: 0;
-    max-width: 840px;
+    max-width: 940px;
     max-height: 90vh;
     margin: 1rem auto;
     position: relative;
@@ -531,7 +530,7 @@ nav ul li a:hover, .language-select:hover{
 .modal-content .btn{
     width: 30%;
     padding: 0.2rem 0;
-    margin-top: 0;
+    margin: 0 0 0 auto;
 } 
 /* Packages */
 .edu-green-slope{
@@ -700,8 +699,17 @@ nav ul li a:hover, .language-select:hover{
 .contact-info{
     margin:0 1rem 1rem 0;
 }
+.contact-info > *{
+    margin: 0.5rem 0;
+}
 .contact-info div{
     font-size: 1.2rem;
+}
+.contact-info i{
+    font-size: 1.5rem;
+}
+.contact-info a:hover{
+    text-decoration: underline;
 }
 .fa-github{
     font-size: 2rem;
@@ -949,6 +957,9 @@ footer{
     .sales-copy p{
         width: calc(100% - 4rem);
     }
+    .portfolio-cards:nth-child(2n), .portfolio-cards:nth-child(4n){
+        margin: 4rem 0;
+    }
 }
 /*large phone*/
 @media (max-width: 700px ){
@@ -1056,6 +1067,9 @@ footer{
     .portfolio-cards{
         width: 80%;
     }
+    .portfolio-cards:nth-child(2n), .portfolio-cards:nth-child(4n){
+        margin: 4rem 0;
+    }
     .portfolio-modal{
         max-width: 500px;
     }
@@ -1073,6 +1087,7 @@ footer{
     .modal-content .btn{
         width: 60%;
         font-size: 1rem;
+        margin: 0 auto;
     }
     .packages-container{
         flex-direction: column;
