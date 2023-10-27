@@ -126,29 +126,48 @@ function removeActiveLinks(){
 window.addEventListener('scroll', changeActiveNavLinks) //change active nav links
 
 // GSAP animations, slogan + seal
+const playBtnContainer = document.querySelector('.play-btn-container')
+const playBtn = document.querySelector('.play-animation-btn')
 const sloganScreen = document.querySelector('.slogan')
 const sealScreen = document.querySelector('.seal-container')
 const halfScreen = window.innerHeight / 2
-let animationSloganOver = false
+
 let animationSealOver = false
 
 function animatedSlogan(){
-    const sloganTop = sloganScreen.getBoundingClientRect().top + 20
+    let tl = gsap.timeline()
 
-    if ( sloganTop < halfScreen ){
-        let tl = gsap.timeline()
+    tl.to( '.short-slogan div h2 span', 2, { y: "0", stagger: 0.5 } )
+    .to( '.short-slogan', 1, { y: "-100%"})
+    .to( '.slider', 0.5, { y: "100%" } )
+    .to( '.sales-copy', 4, { y: "0" , ease: "bounce.out"} )
+    .to( '.sales-copy p', 2, { y: "0" , ease: "bounce.out"}, "-=2")
+    .to( '.sales-copy p span', 2, { y: "0"}, "-=1" ) 
+    .to( '.sales-copy p a', 2, { y: "0", ease: "bounce.out"}, "-=1" )
+} 
 
-        tl.to( '.short-slogan div h2 span', 2, { y: "0", stagger: 0.5 } )
-        .to( '.short-slogan', 1, { y: "-100%"})
-        .to( '.slider', 0.5, { y: "100%" } )
-        .to( '.sales-copy', 4, { y: "0" , ease: "bounce.out"} )
-        .to( '.sales-copy p', 2, { y: "0" , ease: "bounce.out"}, "-=2")
-        .to( '.sales-copy p span', 2, { y: "0"}, "-=1" ) 
-        .to( '.sales-copy p a', 2, { y: "0", ease: "bounce.out"}, "-=1" )
+playBtn.addEventListener('click', () =>{
+    playBtnContainer.remove()
+    sloganScreen.style.minHeight = '100vh'
+    animatedSlogan()
+})
+// function animatedSlogan(){
+//     const sloganTop = sloganScreen.getBoundingClientRect().top + 20
 
-        animationSloganOver = true
-    } 
-}
+//     if ( sloganTop < halfScreen ){
+//         let tl = gsap.timeline()
+
+//         tl.to( '.short-slogan div h2 span', 2, { y: "0", stagger: 0.5 } )
+//         .to( '.short-slogan', 1, { y: "-100%"})
+//         .to( '.slider', 0.5, { y: "100%" } )
+//         .to( '.sales-copy', 4, { y: "0" , ease: "bounce.out"} )
+//         .to( '.sales-copy p', 2, { y: "0" , ease: "bounce.out"}, "-=2")
+//         .to( '.sales-copy p span', 2, { y: "0"}, "-=1" ) 
+//         .to( '.sales-copy p a', 2, { y: "0", ease: "bounce.out"}, "-=1" )
+
+//         animationSloganOver = true
+//     } 
+// }
 
 function animatedSeal(){
     const sealTop = sealScreen.getBoundingClientRect().top
@@ -157,7 +176,8 @@ function animatedSeal(){
         let tl = gsap.timeline()
         
         tl.fromTo( '.seal', 0.25, { y: "-200vh", x: "100vw", opacity:"0"}, {y: "0", x: "0", opacity: "1"} )
-        .fromTo( '.seal-container', 0.05, { rotation: -10}, {rotation: 0, repeat: 4, yoyo: true} )
+        .fromTo( '.seal-container', 0.05, { rotation: -10}, {rotation: 0} )
+        .fromTo( '.smoke', 1, {opacity: 1}, {opacity: 0} )
         .to ( '.seal-text', 2, { opacity: "1", delay: 1})
 
         animationSealOver = true
@@ -165,10 +185,6 @@ function animatedSeal(){
 }
 
 window.addEventListener('scroll', () =>{
-    if (!animationSloganOver){
-        animatedSlogan()
-    }
-
     if(!animationSealOver){
         animatedSeal()
     }

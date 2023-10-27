@@ -262,9 +262,40 @@ nav ul li a:hover, .language-select:hover{
     }
 }
     /* slogan animation*/
+.play-btn-container{
+    background-color: var(--primary-green);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}    
+.play-animation-btn{
+    background-color: transparent;
+    border: 0;
+    max-width: 300px;
+    cursor: pointer;
+    animation: play 4s linear infinite;
+}   
+.play-btn-container p{
+    color: var(--primary-black);
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.6s linear;
+}
+.play-animation-btn:hover + p{
+    transform: scale(1.15);
+}
+@keyframes play{
+    50%{
+        transform: scale(0.9);
+    }
+} 
 .slogan{
     padding: 2rem 5rem;
-    min-height: 100vh;
+    min-height: 0;
+    /* min-height: 100vh; */
     overflow: hidden;
     position: relative;
     font-family: 'Ubuntu', sans-serif;
@@ -661,9 +692,18 @@ nav ul li a:hover, .language-select:hover{
     justify-items: center;
     margin-top: 4rem;
 }
+.seal-box{
+    position: relative;
+}
 .seal{
     max-width: 400px;
     transform: rotate(-20deg);
+    opacity: 0;
+}
+.smoke{
+    position: absolute;
+    left: 0;
+    bottom: 0;
     opacity: 0;
 }
 .seal-text{
@@ -1063,6 +1103,10 @@ footer{
     .gradient{
         display: block;
     }
+    /* slogan */
+    .play-btn-container{
+        margin-top: 6rem;
+    }
     /*portfolio*/
     .portfolio-cards{
         width: 80%;
@@ -1091,7 +1135,10 @@ footer{
     }
     .packages-container{
         flex-direction: column;
-        gap: 3rem;
+        gap: 4rem;
+    }
+    .packages-container > *{
+        margin-top: 2rem;
     }
     .contact-flex{
         flex-direction: column;
