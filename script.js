@@ -151,23 +151,6 @@ playBtn.addEventListener('click', () =>{
     sloganScreen.style.minHeight = '100vh'
     animatedSlogan()
 })
-// function animatedSlogan(){
-//     const sloganTop = sloganScreen.getBoundingClientRect().top + 20
-
-//     if ( sloganTop < halfScreen ){
-//         let tl = gsap.timeline()
-
-//         tl.to( '.short-slogan div h2 span', 2, { y: "0", stagger: 0.5 } )
-//         .to( '.short-slogan', 1, { y: "-100%"})
-//         .to( '.slider', 0.5, { y: "100%" } )
-//         .to( '.sales-copy', 4, { y: "0" , ease: "bounce.out"} )
-//         .to( '.sales-copy p', 2, { y: "0" , ease: "bounce.out"}, "-=2")
-//         .to( '.sales-copy p span', 2, { y: "0"}, "-=1" ) 
-//         .to( '.sales-copy p a', 2, { y: "0", ease: "bounce.out"}, "-=1" )
-
-//         animationSloganOver = true
-//     } 
-// }
 
 function animatedSeal(){
     const sealTop = sealScreen.getBoundingClientRect().top
@@ -216,19 +199,23 @@ window.addEventListener('click', (e) => {
     }
 }) //closing modals on click outside
 
-// packages active
-const packages = document.querySelectorAll('.package')
 
-function removeChosenPackage(){
-    packages.forEach( pack => { pack.parentNode.classList.remove('chosen-package') } )
-}
+// youtube animation
+const youTubeBtnContainer = document.querySelector('.warehouse-btn-container')
+const youTubeBtn = document.querySelector('.warehouse-animation-btn')
+const warehouseAnimationContainer = document.querySelector('.warehouse-animation-container')
+const warehouseLogo = document.querySelector('.logo-img')
+const forklift = document.querySelector('.forklift')
 
-packages.forEach( pack => {
-    pack.addEventListener('click', () =>{
-        removeChosenPackage()
-        pack.parentNode.classList.add('chosen-package')
-    })
-} )
+const audio = new Audio('./assets/warehouse-audio.mp3')
+
+youTubeBtn.addEventListener('click', () =>{
+    audio.play()
+    youTubeBtnContainer.remove()
+    warehouseAnimationContainer.style.display = 'grid'
+    warehouseLogo.style.animation = 'show-logo 0.1s 1.2s linear forwards'
+    forklift.style.animation = 'drive 1.2s linear forwards'
+})
 
 
 //3d-animation contact
