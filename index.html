@@ -1,538 +1,1009 @@
 <!DOCTYPE html>
 <html lang="sr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Marjan je web developer iz Srbije. Kompletna izrada modernih vebsajtova koji inspirišu. Sajt na srpskom i engleskom. Ekspert u HTML-u, CSS-u, JavaScript-u i novim veb tehnologijama. Kontaktirajte me danas da dobijete najbolje uslove.">
-    <meta name="keywords" content="izrada vebsajtova, web developer, JavaScript">
-    <meta name="theme-color" content="#010101">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="assets/logo-green.svg" type="image/svg">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Marjan je web developer iz Srbije. Kompletna izrada modernih vebsajtova koji inspirišu. Sajt na srpskom i engleskom. Ekspert u HTML-u, CSS-u, JavaScript-u i novim veb tehnologijama. Kontaktirajte me danas da dobijete najbolje uslove."
+    />
+    <meta
+      name="keywords"
+      content="izrada vebsajtova, web developer, JavaScript"
+    />
+    <meta name="theme-color" content="#010101" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="assets/logo-green.svg" type="image/svg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Marjan Zivkovic - Front-end developer</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- menu button -->
-    <button class="menu-btn"> <span class="less-than"><i class="fa-solid fa-less-than"></i></span> <span class="slash">&sol;</span>  <span class="greater-than"><i class="fa-solid fa-greater-than"></i></span></button>
+    <button class="menu-btn">
+      <span class="less-than"><i class="fa-solid fa-less-than"></i></span>
+      <span class="slash">&sol;</span>
+      <span class="greater-than"><i class="fa-solid fa-greater-than"></i></span>
+    </button>
     <!-- navigtion -->
     <nav>
-        <ul class="main-nav">
-            <li class="eng-item"><a href="#about">About</a></li>
-            <li class="srb-item"><a href="#about">O meni</a></li>
-            <li class="eng-item"><a href="#portfolio">Portfolio</a></li>
-            <li class="srb-item"><a href="#portfolio">Portfolio</a></li>
-            <li class="eng-item"><a href="#channel">YouTube</a></li>
-            <li class="srb-item"><a href="#channel">YouTube</a></li>
-            <li class="eng-item"><a href="#contact">Contact</a></li>
-            <li class="srb-item"><a href="#contact">Kontakt</a></li>
-            <li class="lang-li">
-                <select class="language-select"  name="language">
-                    <option value="srb">Srb</option>
-                    <option value="eng">Eng</option>
-                </select>
-            </li>
-            <li><span class="blink-cursor" id="hidden-cursor"></span></li> 
-        </ul>
+      <ul class="main-nav">
+        <li class="eng-item"><a href="#about">About</a></li>
+        <li class="srb-item"><a href="#about">O meni</a></li>
+        <li class="eng-item"><a href="#portfolio">Portfolio</a></li>
+        <li class="srb-item"><a href="#portfolio">Portfolio</a></li>
+        <li class="eng-item"><a href="#channel">YouTube</a></li>
+        <li class="srb-item"><a href="#channel">YouTube</a></li>
+        <li class="eng-item"><a href="#contact">Contact</a></li>
+        <li class="srb-item"><a href="#contact">Kontakt</a></li>
+        <li class="lang-li">
+          <select class="language-select" name="language">
+            <option value="eng">Eng</option>
+            <option value="srb">Srb</option>
+          </select>
+        </li>
+        <li><span class="blink-cursor" id="hidden-cursor"></span></li>
+      </ul>
     </nav>
     <!-- hero -->
     <section class="hero">
-        <h4 class="hero-quote"> <span class="quote-text">&nbsp;</span><span class="blink-cursor"></span></h4>
-        <img src="assets/logo-green.svg" alt="logo" width="400">
+      <h4 class="hero-quote">
+        <span class="quote-text">&nbsp;</span><span class="blink-cursor"></span>
+      </h4>
+      <img src="assets/logo-green.svg" alt="logo" width="400" />
     </section>
     <!-- empty section -->
     <div class="nav-active">&nbsp;</div>
     <!-- welcome section -->
     <section id="about" class="nav-active">
-        <div class="welcome">
-            <div class="hi-div transformed">
-                <h1 class="eng-item"> <span class="hi"> Hi,</span> <br> <span class="i-am">I'm Marjan,</span>  <br>a front-end developer</h1>
-                <h1 class="srb-item"> <span class="hi"> Zdravo,</span> <br> <span class="i-am">ja sam Marjan,</span>  <br> frontend developer</h1>
-            </div>
-            <div class="gradient transformed"></div>
-            <div>
-                <img src="assets/marjan.png" alt="Marjan Zivkovic">
-            </div>
-            <div class="hire-me transformed">
-                <p class="eng-item">If you want a website that looks clean, interactive, and beautiful on all devices <span class="arrow-down"><i class="fa-solid fa-turn-down"></i></span></p>
-                <p class="srb-item">Ako želite da Vaš vebsajt bude uredan, interaktivan i izgleda dobro nas svim uređajima <span class="arrow-down"><i class="fa-solid fa-turn-down"></i></span></p>
-                <span class="eng-item"><a class="btn eng-item" href="#contact">Hire me</a></span>
-                <span class="srb-item"><a class="btn srb-item" href="#contact">Angažujte me</a></span>
-            </div>
+      <div class="welcome">
+        <div class="hi-div transformed">
+          <h1 class="eng-item">
+            <span class="hi"> Hi,</span> <br />
+            <span class="i-am">I'm Marjan,</span> <br />a front-end developer
+          </h1>
+          <h1 class="srb-item">
+            <span class="hi"> Zdravo,</span> <br />
+            <span class="i-am">ja sam Marjan,</span> <br />
+            frontend developer
+          </h1>
         </div>
-        <div class="play-btn-container">
-            <button class="play-animation-btn"><img src="./assets/play.png" alt="play-animation-button"></button>
-            <p class="eng-item">Play animation</p>
-            <p class="srb-item">Pusti animaciju</p>
+        <div class="gradient transformed"></div>
+        <div>
+          <img src="assets/marjan.png" alt="Marjan Zivkovic" />
         </div>
-        <div class="slogan">
-            <div class="short-slogan">
-                <div class="eng-item">
-                    <h2><span>ANIMATE</span></h2>
-                    <h2><span>YOUR</span></h2>
-                    <h2><span>LIFE</span></h2>
-                </div>
-                <div class="srb-item">
-                    <h2><span>ANIMIRAJTE</span></h2>
-                    <h2><span>VAŠ</span></h2>
-                    <h2><span>ŽIVOT</span></h2>
-                </div>
-            </div>
-            <div class="slider"></div>
-            <div class="sales-copy">
-                <div class="srb-item">
-                    <p>
-                        <span> Ono što ja mogu da ponudim je jedistvena <strong>kombinacija strasti za veb-development i kreativnosti</strong> . Bilo da Vam treba developer koji će se pridružiti Vašem timu puno radno vreme ili pouzdani freelance-r, ja imam veštine i iskustvo da isporučim rezultat.  <br><br> <strong>Pomoći ću Vam</strong> da se veb prezentacija Vaše kompanije izdvoji iz gomile monotonih, beživotnih sajtova. Hajde da radimo zajedno na kreiranju vebsajtova koji angažuju i inspirišu! <br> <span class="faded-text">Za vebsajt o kome se govori<i class="fa-solid fa-turn-down"></i></span></span>
-                        <a href="#contact" class="btn">Kontaktirajte Me</a> 
-                    </p>
-                </div>
-                <div class="eng-item">
-                    <p>
-                        <span> I offer a unique <strong>combination of passion for development and creativity</strong>. Whether you're looking for a full-time front-end developer to join your team, or a reliable freelancer to bring your web development projects to life, I have the skills and experience to deliver results. <br><br> <strong>I will help</strong> your website to stand out from the crowd of monotonous, lifeless websites. Let's work together to create websites that engage and inspire! <br> <span class="faded-text">For the website that's talked about<i class="fa-solid fa-turn-down"></i></span></span>
-                        <a href="#contact" class="btn">Contact Me</a> 
-                    </p>
-                </div>
-            </div>
+        <div class="hire-me transformed">
+          <p class="eng-item">
+            If you want a website that looks clean, interactive, and beautiful
+            on all devices
+            <span class="arrow-down"
+              ><i class="fa-solid fa-turn-down"></i
+            ></span>
+          </p>
+          <p class="srb-item">
+            Ako želite da Vaš vebsajt bude uredan, interaktivan i izgleda dobro
+            nas svim uređajima
+            <span class="arrow-down"
+              ><i class="fa-solid fa-turn-down"></i
+            ></span>
+          </p>
+          <span class="eng-item"
+            ><a class="btn eng-item" href="#contact">Hire me</a></span
+          >
+          <span class="srb-item"
+            ><a class="btn srb-item" href="#contact">Angažujte me</a></span
+          >
         </div>
+      </div>
+      <div class="play-btn-container">
+        <button class="play-animation-btn">
+          <img src="./assets/play.png" alt="play-animation-button" />
+        </button>
+        <p class="eng-item">Play animation</p>
+        <p class="srb-item">Pusti animaciju</p>
+      </div>
+      <div class="slogan">
+        <div class="short-slogan">
+          <div class="eng-item">
+            <h2><span>ANIMATE</span></h2>
+            <h2><span>YOUR</span></h2>
+            <h2><span>LIFE</span></h2>
+          </div>
+          <div class="srb-item">
+            <h2><span>ANIMIRAJTE</span></h2>
+            <h2><span>VAŠ</span></h2>
+            <h2><span>ŽIVOT</span></h2>
+          </div>
+        </div>
+        <div class="slider"></div>
+        <div class="sales-copy">
+          <div class="srb-item">
+            <p>
+              <span>
+                Ono što ja mogu da ponudim je jedistvena
+                <strong
+                  >kombinacija strasti za veb-development i kreativnosti</strong
+                >
+                . Bilo da Vam treba developer koji će se pridružiti Vašem timu
+                puno radno vreme ili pouzdani freelance-r, ja imam veštine i
+                iskustvo da isporučim rezultat. <br /><br />
+                <strong>Pomoći ću Vam</strong> da se veb prezentacija Vaše
+                kompanije izdvoji iz gomile monotonih, beživotnih sajtova. Hajde
+                da radimo zajedno na kreiranju vebsajtova koji angažuju i
+                inspirišu! <br />
+                <span class="faded-text"
+                  >Za vebsajt o kome se govori<i
+                    class="fa-solid fa-turn-down"
+                  ></i></span
+              ></span>
+              <a href="#contact" class="btn">Kontaktirajte Me</a>
+            </p>
+          </div>
+          <div class="eng-item">
+            <p>
+              <span>
+                I offer a unique
+                <strong
+                  >combination of passion for development and creativity</strong
+                >. Whether you're looking for a full-time front-end developer to
+                join your team, or a reliable freelancer to bring your web
+                development projects to life, I have the skills and experience
+                to deliver results. <br /><br />
+                <strong>I will help</strong> your website to stand out from the
+                crowd of monotonous, lifeless websites. Let's work together to
+                create websites that engage and inspire! <br />
+                <span class="faded-text"
+                  >For the website that's talked about<i
+                    class="fa-solid fa-turn-down"
+                  ></i></span
+              ></span>
+              <a href="#contact" class="btn">Contact Me</a>
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- portfolio -->
     <main class="portfolio nav-active" id="portfolio">
-        <div class="portfolio-hero-div">
-            <div>
-                <h2 class="eng-item">Check out my projects <i class="fa-solid fa-gear fa-spin"></i><i class="fa-solid fa-gear fa-spin fa-spin-reverse"></i></h2>
-                <h2 class="srb-item">Neki od mojih projekata <i class="fa-solid fa-gear fa-spin"></i><i class="fa-solid fa-gear fa-spin fa-spin-reverse"></i></h2>
-            </div>
-            <div class="portfolio-matrix transformed"></div>
+      <div class="portfolio-hero-div">
+        <div>
+          <h2 class="eng-item">
+            Check out my projects <i class="fa-solid fa-gear fa-spin"></i
+            ><i class="fa-solid fa-gear fa-spin fa-spin-reverse"></i>
+          </h2>
+          <h2 class="srb-item">
+            Neki od mojih projekata <i class="fa-solid fa-gear fa-spin"></i
+            ><i class="fa-solid fa-gear fa-spin fa-spin-reverse"></i>
+          </h2>
         </div>
-        <div class="portfolio-galery">
-            <!-- Sody -->
-            <div class="portfolio-modal-container">
-                <div class="portfolio-modal transformed">
-                    <div class="close-btn"><i class="fa-sharp fa-solid fa-xmark"></i></div>
-                    <div class="modal-background sody"></div>
-                    <div class="modal-content">
-                        <h3>Soudabeh Rokni</h3>
-                        <div class="eng-item"><i class="fa-solid fa-file-pen modal-icon"></i>
-                            Soudabeh Rokni is a super-talented writer originally from Iran, living in the US. She is famous for her short stories on socially sensitive topics. Check out her official website.
-                        </div>
-                        <div class="srb-item"><i class="fa-solid fa-file-pen modal-icon"></i>
-                            Soudabeh Rokni je super talentovana spisateljica poreklom iz Irana, koja živi u SAD-u. Čuvena je po svojim kratkim pričama o socijalno osetljivim temama. Pogledajte njenu zvaničnu veb stranicu. 
-                        </div>
-                        <div><i class="fa-solid fa-laptop-code modal-icon"></i>
-                            WIX editor
-                        </div>
-                        <div><i class="fa-solid fa-language modal-icon"></i>
-                            English / Farsi
-                        </div>
-                        <div class="eng-item"><i class="fa-solid fa-comment modal-icon"></i>
-                            While you're there, order her new book 'Me too in exile'.
-                        </div>
-                        <div class="srb-item"><i class="fa-solid fa-comment modal-icon"></i>
-                            Dok ste tu, poručite njenu najnoviju knigu 'I ja u egzilu'.
-                        </div>
-                        <div class="eng-item"><a class="btn" href="https://www.soudabehrokni.com/" target="_blank">Visit page</a></div>
-                        <div class="srb-item"><a class="btn" href="https://www.soudabehrokni.com/" target="_blank">Poseti stranicu</a></div>
-                    </div>
-                </div>
+        <div class="portfolio-matrix transformed"></div>
+      </div>
+      <div class="portfolio-galery">
+        <!-- Sody -->
+        <div class="portfolio-modal-container">
+          <div class="portfolio-modal transformed">
+            <div class="close-btn">
+              <i class="fa-sharp fa-solid fa-xmark"></i>
             </div>
-            <div class="portfolio-cards transformed">
-                <div class="portfolio-website sody">
-                    <div class="portfolio-hover">
-                        <small class="eng-item">view more</small>
-                        <small class="srb-item">saznaj više</small>
-                    </div>
-                    <h4>Soudabeh Rokni</h4>
-                </div>
-            </div>  
-            <!-- Milenkovic -->
-            <div class="portfolio-modal-container">
-                <div class="portfolio-modal transformed">
-                    <div class="close-btn"><i class="fa-sharp fa-solid fa-xmark"></i></div>
-                    <div class="modal-background milenkovic"></div>
-                    <div class="modal-content">
-                        <h3>Royal Garden Milenkovic</h3>
-                        <div class="eng-item"><i class="fa-solid fa-file-pen modal-icon"></i>
-                            Royal Garden Milenkovic is a yard and park landscaping company, as well as a nursery of quality flowers and conifers. I had the honor to make their official web presentation.
-                        </div>
-                        <div class="srb-item"><i class="fa-solid fa-file-pen modal-icon"></i>
-                            Royal Garden Milenković je kompanija za uređenje dvorišta i parkova, kao i rasadnik kvalitetnog cveća i četinara. Imao sam čast da uradim njihovu zvaničnu veb prezentaciju.
-                        </div>
-                        <div><i class="fa-solid fa-laptop-code modal-icon"></i>
-                            REACT.JS, React-router
-                        </div>
-                        <div><i class="fa-solid fa-language modal-icon"></i>
-                            Srpski
-                        </div>
-                        <div class="eng-item"><i class="fa-solid fa-comment modal-icon"></i>
-                            Bring colors and joy into your world with flowers from R.G.Milenkovic!
-                        </div>
-                        <div class="srb-item"><i class="fa-solid fa-comment modal-icon"></i>
-                            Unesite radost i boje u Vaš svet uz cveće iz R.G.Milenković! 
-                        </div>
-                        <div class="eng-item"><a class="btn" href="https://www.rg-milenkovic.com/" target="_blank">Visit page</a></div>
-                        <div class="srb-item"><a class="btn" href="https://www.rg-milenkovic.com/" target="_blank">Poseti stranicu</a></div>
-                    </div>
-                </div>
+            <div class="modal-background sody"></div>
+            <div class="modal-content">
+              <h3>Soudabeh Rokni</h3>
+              <div class="eng-item">
+                <i class="fa-solid fa-file-pen modal-icon"></i>
+                Soudabeh Rokni is a super-talented writer originally from Iran,
+                living in the US. She is famous for her short stories on
+                socially sensitive topics. Check out her official website.
+              </div>
+              <div class="srb-item">
+                <i class="fa-solid fa-file-pen modal-icon"></i>
+                Soudabeh Rokni je super talentovana spisateljica poreklom iz
+                Irana, koja živi u SAD-u. Čuvena je po svojim kratkim pričama o
+                socijalno osetljivim temama. Pogledajte njenu zvaničnu veb
+                stranicu.
+              </div>
+              <div>
+                <i class="fa-solid fa-laptop-code modal-icon"></i>
+                WIX editor
+              </div>
+              <div>
+                <i class="fa-solid fa-language modal-icon"></i>
+                English / Farsi
+              </div>
+              <div class="eng-item">
+                <i class="fa-solid fa-comment modal-icon"></i>
+                While you're there, order her new book 'Me too in exile'.
+              </div>
+              <div class="srb-item">
+                <i class="fa-solid fa-comment modal-icon"></i>
+                Dok ste tu, poručite njenu najnoviju knigu 'I ja u egzilu'.
+              </div>
+              <div class="eng-item">
+                <a
+                  class="btn"
+                  href="https://www.soudabehrokni.com/"
+                  target="_blank"
+                  >Visit page</a
+                >
+              </div>
+              <div class="srb-item">
+                <a
+                  class="btn"
+                  href="https://www.soudabehrokni.com/"
+                  target="_blank"
+                  >Poseti stranicu</a
+                >
+              </div>
             </div>
-            <div class="portfolio-cards transformed">
-                <div class="portfolio-website milenkovic">
-                    <div class="portfolio-hover">
-                        <small class="eng-item">view more</small>
-                        <small class="srb-item">saznaj više</small>
-                    </div>
-                    <h4>Royal Garden Milenkovic</h4>
-                </div>
-            </div>
-            <!-- My todos -->
-            <div class="portfolio-modal-container">
-                <div class="portfolio-modal transformed">
-                    <div class="close-btn"><i class="fa-sharp fa-solid fa-xmark"></i></div>
-                    <div class="modal-background todos"></div>
-                    <div class="modal-content">
-                        <h3>My todos</h3>
-                        <div class="eng-item"><i class="fa-solid fa-file-pen modal-icon"></i>
-                            This is a simple to-do app. You can add to-dos to your list, set priorities, mark them as complete, edit, and delete them. Your list will be saved for the next time you log in.
-                        </div>
-                        <div class="srb-item"><i class="fa-solid fa-file-pen modal-icon"></i>
-                            Ovo je jesdnostavna to-do aplikacija. Možete dodati zadatke na Vašu listu, postaviti prioritete, označiti ih kao urađene, urediti ili izbrisati. Vaša lista će biti sačuvana za sledeći put.
-                        </div>
-                        <div><i class="fa-solid fa-laptop-code modal-icon"></i>
-                            REACT.JS
-                        </div>
-                        <div><i class="fa-solid fa-language modal-icon"></i>
-                            English
-                        </div>
-                        <div class="eng-item"><i class="fa-solid fa-comment modal-icon"></i>
-                            Have fun while boosting your productivity!
-                        </div>
-                        <div class="srb-item"><i class="fa-solid fa-comment modal-icon"></i>
-                            Zabavite se dok povećavate svoju produktivnost!
-                        </div>
-                        <div class="eng-item"><a class="btn" href="https://my-new-todo-app.netlify.app/" target="_blank">Visit page</a></div>
-                        <div class="srb-item"><a class="btn" href="https://my-new-todo-app.netlify.app/" target="_blank">Poseti stranicu</a></div>
-                    </div>
-                </div>
-            </div>
-            <div class="portfolio-cards transformed">
-                <div class="portfolio-website todos">
-                    <div class="portfolio-hover">
-                        <small class="eng-item">view more</small>
-                        <small class="srb-item">saznaj više</small>
-                    </div>
-                    <h4>My todos</h4>
-                </div>
-            </div>
-            <!-- Football tips -->
-            <div class="portfolio-modal-container">
-                <div class="portfolio-modal transformed">
-                    <div class="close-btn"><i class="fa-sharp fa-solid fa-xmark"></i></div>
-                    <div class="modal-background football-tips"></div>
-                    <div class="modal-content">
-                        <h3>Football tips</h3>
-                        <div class="eng-item"><i class="fa-solid fa-file-pen modal-icon"></i>
-                            It's an app that will help you bet on football games. You can get tips for all the matches of the current day from more than 900 leagues. Bet responsibly!
-                        </div>
-                        <div class="srb-item"><i class="fa-solid fa-file-pen modal-icon"></i>
-                            To je aplikacija koja će vam pomoći u klađenju. Možete dobiti savete za sve fudbalske utakmice tekućeg dana iz više od 900 liga. Kladite se odgovorno!
-                        </div>
-                        <div><i class="fa-solid fa-laptop-code modal-icon"></i>
-                            HTML, CSS, JavaScript, REST based API
-                        </div>
-                        <div><i class="fa-solid fa-language modal-icon"></i>
-                            English / Srpski
-                        </div>
-                        <div class="eng-item"><i class="fa-solid fa-comment modal-icon"></i>
-                            Feel free to treat me generously if you win something via this app.
-                        </div>
-                        <div class="srb-item"><i class="fa-solid fa-comment modal-icon"></i>
-                            Slobodno me častite ukoliko dobijete nešto uz pomoć ove aplikacije.
-                        </div>
-                        <div class="eng-item"><a class="btn" href="https://marjanzivkovic.github.io/Football-Tips/" target="_blank">Visit page</a></div>
-                        <div class="srb-item"><a class="btn" href="https://marjanzivkovic.github.io/Football-Tips/" target="_blank">Poseti stranicu</a></div>
-                    </div>
-                </div>
-            </div>
-            <div class="portfolio-cards transformed">
-                <div class="portfolio-website football-tips">
-                    <div class="portfolio-hover">
-                        <small class="eng-item">view more</small>
-                        <small class="srb-item">saznaj više</small>
-                    </div>
-                    <h4>Football tips</h4>
-                </div>
-            </div> 
-            <!-- Cooking ideas -->
-            <div class="portfolio-modal-container">
-                <div class="portfolio-modal transformed">
-                    <div class="close-btn"><i class="fa-sharp fa-solid fa-xmark"></i></div>
-                    <div class="modal-background cooking-ideas"></div>
-                    <div class="modal-content">
-                        <h3>Cooking ideas</h3>
-                        <div class="eng-item"><i class="fa-solid fa-file-pen modal-icon"></i>
-                            Out of ideas on what to eat or drink today? No worries. Just enter an ingredient name in the input field, hit search and this app will give you plenty of possibilities.
-                        </div>
-                        <div class="srb-item"><i class="fa-solid fa-file-pen modal-icon"></i>
-                            Nemate ideju šta pojesti ili popiti danas? Bez brige. Samo unesite naziv sastojka u polju za unos, pritisnite search i ova aplikacija će vam dati puno mogućnosti.
-                        </div>
-                        <div><i class="fa-solid fa-laptop-code modal-icon"></i>
-                            REACT.JS, REST based API
-                        </div>
-                        <div><i class="fa-solid fa-language modal-icon"></i>
-                            English
-                        </div>
-                        <div class="eng-item"><i class="fa-solid fa-comment modal-icon"></i>
-                            My first React app. Credits to <a href="https://www.youtube.com/@developedbyed">developedbyed</a>.
-                        </div>
-                        <div class="srb-item"><i class="fa-solid fa-comment modal-icon"></i>
-                            Moja prva React aplikacija. Hvala <a href="https://www.youtube.com/@developedbyed">developedbyed</a>.
-                        </div>
-                        <div class="eng-item"><a class="btn" href="https://marjanzivkovic.github.io/cooking-ideas/" target="_blank">Visit page</a></div>
-                        <div class="srb-item"><a class="btn" href="https://marjanzivkovic.github.io/cooking-ideas/" target="_blank">Poseti stranicu</a></div>
-                    </div>
-                </div>
-            </div>
-            <div class="portfolio-cards transformed">
-                <div class="portfolio-website cooking-ideas">
-                    <div class="portfolio-hover">
-                        <small class="eng-item">view more</small>
-                        <small class="srb-item">saznaj više</small>
-                    </div>
-                    <h4>Cooking ideas</h4>
-                </div>
-            </div> 
-            <!-- Fetch quotes -->
-            <div class="portfolio-modal-container">
-                <div class="portfolio-modal transformed">
-                    <div class="close-btn"><i class="fa-sharp fa-solid fa-xmark"></i></div>
-                    <div class="modal-background fetch"></div>
-                    <div class="modal-content">
-                        <h3>Fetch quotes</h3>
-                        <div class="eng-item"><i class="fa-solid fa-file-pen modal-icon"></i>
-                            This is a single-page app. It's a random quote generator. With each click on the button, you get a new quote. If you like some of them you can prepopulate a Facebook or Twitter post with a single click. 
-                        </div>
-                        <div class="srb-item"><i class="fa-solid fa-file-pen modal-icon"></i>
-                            Ovo je single-page aplikacija. U pitanju je generator slučajnih citata. Svakim klikom na dugme dobijate nov citat. Ako vam se neki od njih svidi, samo jednim klikom dobićete popunjen Facebook ili Twitter post.
-                        </div>
-                        <div><i class="fa-solid fa-laptop-code modal-icon"></i>
-                            HTML, CSS, JavaScript, fetch API, async/await
-                        </div>
-                        <div><i class="fa-solid fa-language modal-icon"></i>
-                            English
-                        </div>
-                        <div class="eng-item"><i class="fa-solid fa-comment modal-icon"></i>
-                            Credits for inspiration and guidance to the guys from ZTM Academy.
-                        </div>
-                        <div class="srb-item"><i class="fa-solid fa-comment modal-icon"></i>
-                            Hvala za inspiraciju i instrukcije momcima iz ZTM Academy.
-                        </div>
-                        <div class="eng-item"><a class="btn" href="https://marjanzivkovic.github.io/Fetch-Quotes/" target="_blank">Visit page</a></div>
-                        <div class="srb-item"><a class="btn" href="https://marjanzivkovic.github.io/Fetch-Quotes/" target="_blank">Poseti stranicu</a></div>
-                    </div>
-                </div>
-            </div>
-            <div class="portfolio-cards transformed">
-                <div class="portfolio-website fetch">
-                    <div class="portfolio-hover">
-                        <small class="eng-item">view more</small>
-                        <small class="srb-item">saznaj više</small>
-                    </div>
-                    <h4>Fetch quotes</h4>
-                </div>
-            </div> 
-            <!-- Insect game -->
-            <div class="portfolio-modal-container">
-                <div class="portfolio-modal transformed">
-                    <div class="close-btn"><i class="fa-sharp fa-solid fa-xmark"></i></div>
-                    <div class="modal-background game"></div>
-                    <div class="modal-content">
-                        <h3>Insect catching game</h3>
-                        <div class="eng-item"><i class="fa-solid fa-file-pen modal-icon"></i>
-                            This is a silly game. You pick one of 4 different types of insects. The ones you chose start appearing on the screen in huge amounts. Spoiler alert: you can't catch them.
-                        </div>
-                        <div class="srb-item"><i class="fa-solid fa-file-pen modal-icon"></i>
-                            U pitanju je smešna igra. Birate jednu od 4 vrste insekata. One koje izaberete počinju da se pojavljuju na ekranu u velikim količinama. Upozorenje: ne možete ih pohvatati.  
-                        </div>
-                        <div><i class="fa-solid fa-laptop-code modal-icon"></i>
-                            HTML, CSS, JavaScript
-                        </div>
-                        <div><i class="fa-solid fa-language modal-icon"></i>
-                            English
-                        </div>
-                        <div class="eng-item"><i class="fa-solid fa-comment modal-icon"></i>
-                            Credits for inspiration and guidance to Brad Traversy.
-                        </div>
-                        <div class="srb-item"><i class="fa-solid fa-comment modal-icon"></i>
-                            Hvala za inspiraciju i instrukcije Brad Traversy-ju.
-                        </div>
-                        <div class="eng-item"><a class="btn" href="https://marjanzivkovic.github.io/Insect-game/" target="_blank">Visit page</a></div>
-                        <div class="srb-item"><a class="btn" href="https://marjanzivkovic.github.io/Insect-game/" target="_blank">Poseti stranicu</a></div>
-                    </div>
-                </div>
-            </div>
-            <div class="portfolio-cards transformed">
-                <div class="portfolio-website game">
-                    <div class="portfolio-hover">
-                        <small class="eng-item">view more</small>
-                        <small class="srb-item">saznaj više</small>
-                    </div>
-                    <h4>Insect catching game </h4>
-                </div>
-            </div>   
-            <!-- AJ tribute -->
-            <div class="portfolio-modal-container">
-                <div class="portfolio-modal transformed">
-                    <div class="close-btn"><i class="fa-sharp fa-solid fa-xmark"></i></div>
-                    <div class="modal-background aj"></div>
-                    <div class="modal-content">
-                        <h3>AJ tribute website</h3>
-                        <div class="eng-item"><i class="fa-solid fa-file-pen modal-icon"></i>
-                            This was my very first project. It's a complete website about my favorite English coach with 9 pages some of which are very different as I wanted to try lots of new ideas.
-                        </div>
-                        <div class="srb-item"><i class="fa-solid fa-file-pen modal-icon"></i>
-                            Moj prvi projekat. U pitanju je kompletan vebsajt o mom omiljenom učitelju engleskog jezika, sa 9 stranica, od koje su neke vrlo različite jer sam probao mnogo novih ideja.
-                        </div>
-                        <div><i class="fa-solid fa-laptop-code modal-icon"></i>
-                            HTML, CSS, JavaScript, AOS.js
-                        </div>
-                        <div><i class="fa-solid fa-language modal-icon"></i>
-                            English
-                        </div>
-                        <div class="eng-item"><i class="fa-solid fa-comment modal-icon"></i>
-                            While you're there, if you need to learn English AJ's your guy.
-                        </div>
-                        <div class="srb-item"><i class="fa-solid fa-comment modal-icon"></i>
-                            Dok ste tu, ako želite da naučite engleski, AJ je vaš čovek.
-                        </div>
-                        <div class="eng-item"><a class="btn" href="https://marjanzivkovic.github.io/AJ-Tribute/" target="_blank">Visit page</a></div>
-                        <div class="srb-item"><a class="btn" href="https://marjanzivkovic.github.io/AJ-Tribute/" target="_blank">Poseti stranicu</a></div>
-                    </div>
-                </div>
-            </div>
-            <div class="portfolio-cards transformed">
-                <div class="portfolio-website aj">
-                    <div class="portfolio-hover">
-                        <small class="eng-item">view more</small>
-                        <small class="srb-item">saznaj više</small>
-                    </div>
-                    <h4>AJ tribute</h4>
-                </div>
-            </div>                            
+          </div>
         </div>
+        <div class="portfolio-cards transformed">
+          <div class="portfolio-website sody">
+            <div class="portfolio-hover">
+              <small class="eng-item">view more</small>
+              <small class="srb-item">saznaj više</small>
+            </div>
+            <h4>Soudabeh Rokni</h4>
+          </div>
+        </div>
+        <!-- Milenkovic -->
+        <div class="portfolio-modal-container">
+          <div class="portfolio-modal transformed">
+            <div class="close-btn">
+              <i class="fa-sharp fa-solid fa-xmark"></i>
+            </div>
+            <div class="modal-background milenkovic"></div>
+            <div class="modal-content">
+              <h3>Royal Garden Milenkovic</h3>
+              <div class="eng-item">
+                <i class="fa-solid fa-file-pen modal-icon"></i>
+                Royal Garden Milenkovic is a yard and park landscaping company,
+                as well as a nursery of quality flowers and conifers. I had the
+                honor to make their official web presentation.
+              </div>
+              <div class="srb-item">
+                <i class="fa-solid fa-file-pen modal-icon"></i>
+                Royal Garden Milenković je kompanija za uređenje dvorišta i
+                parkova, kao i rasadnik kvalitetnog cveća i četinara. Imao sam
+                čast da uradim njihovu zvaničnu veb prezentaciju.
+              </div>
+              <div>
+                <i class="fa-solid fa-laptop-code modal-icon"></i>
+                REACT.JS, React-router
+              </div>
+              <div>
+                <i class="fa-solid fa-language modal-icon"></i>
+                Srpski
+              </div>
+              <div class="eng-item">
+                <i class="fa-solid fa-comment modal-icon"></i>
+                Bring colors and joy into your world with flowers from
+                R.G.Milenkovic!
+              </div>
+              <div class="srb-item">
+                <i class="fa-solid fa-comment modal-icon"></i>
+                Unesite radost i boje u Vaš svet uz cveće iz R.G.Milenković!
+              </div>
+              <div class="eng-item">
+                <a
+                  class="btn"
+                  href="https://www.rg-milenkovic.com/"
+                  target="_blank"
+                  >Visit page</a
+                >
+              </div>
+              <div class="srb-item">
+                <a
+                  class="btn"
+                  href="https://www.rg-milenkovic.com/"
+                  target="_blank"
+                  >Poseti stranicu</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-cards transformed">
+          <div class="portfolio-website milenkovic">
+            <div class="portfolio-hover">
+              <small class="eng-item">view more</small>
+              <small class="srb-item">saznaj više</small>
+            </div>
+            <h4>Royal Garden Milenkovic</h4>
+          </div>
+        </div>
+        <!-- My todos -->
+        <div class="portfolio-modal-container">
+          <div class="portfolio-modal transformed">
+            <div class="close-btn">
+              <i class="fa-sharp fa-solid fa-xmark"></i>
+            </div>
+            <div class="modal-background todos"></div>
+            <div class="modal-content">
+              <h3>My todos</h3>
+              <div class="eng-item">
+                <i class="fa-solid fa-file-pen modal-icon"></i>
+                This is a simple to-do app. You can add to-dos to your list, set
+                priorities, mark them as complete, edit, and delete them. Your
+                list will be saved for the next time you log in.
+              </div>
+              <div class="srb-item">
+                <i class="fa-solid fa-file-pen modal-icon"></i>
+                Ovo je jesdnostavna to-do aplikacija. Možete dodati zadatke na
+                Vašu listu, postaviti prioritete, označiti ih kao urađene,
+                urediti ili izbrisati. Vaša lista će biti sačuvana za sledeći
+                put.
+              </div>
+              <div>
+                <i class="fa-solid fa-laptop-code modal-icon"></i>
+                REACT.JS
+              </div>
+              <div>
+                <i class="fa-solid fa-language modal-icon"></i>
+                English
+              </div>
+              <div class="eng-item">
+                <i class="fa-solid fa-comment modal-icon"></i>
+                Have fun while boosting your productivity!
+              </div>
+              <div class="srb-item">
+                <i class="fa-solid fa-comment modal-icon"></i>
+                Zabavite se dok povećavate svoju produktivnost!
+              </div>
+              <div class="eng-item">
+                <a
+                  class="btn"
+                  href="https://my-new-todo-app.netlify.app/"
+                  target="_blank"
+                  >Visit page</a
+                >
+              </div>
+              <div class="srb-item">
+                <a
+                  class="btn"
+                  href="https://my-new-todo-app.netlify.app/"
+                  target="_blank"
+                  >Poseti stranicu</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-cards transformed">
+          <div class="portfolio-website todos">
+            <div class="portfolio-hover">
+              <small class="eng-item">view more</small>
+              <small class="srb-item">saznaj više</small>
+            </div>
+            <h4>My todos</h4>
+          </div>
+        </div>
+        <!-- Football tips -->
+        <div class="portfolio-modal-container">
+          <div class="portfolio-modal transformed">
+            <div class="close-btn">
+              <i class="fa-sharp fa-solid fa-xmark"></i>
+            </div>
+            <div class="modal-background football-tips"></div>
+            <div class="modal-content">
+              <h3>Football tips</h3>
+              <div class="eng-item">
+                <i class="fa-solid fa-file-pen modal-icon"></i>
+                It's an app that will help you bet on football games. You can
+                get tips for all the matches of the current day from more than
+                900 leagues. Bet responsibly!
+              </div>
+              <div class="srb-item">
+                <i class="fa-solid fa-file-pen modal-icon"></i>
+                To je aplikacija koja će vam pomoći u klađenju. Možete dobiti
+                savete za sve fudbalske utakmice tekućeg dana iz više od 900
+                liga. Kladite se odgovorno!
+              </div>
+              <div>
+                <i class="fa-solid fa-laptop-code modal-icon"></i>
+                HTML, CSS, JavaScript, REST based API
+              </div>
+              <div>
+                <i class="fa-solid fa-language modal-icon"></i>
+                English / Srpski
+              </div>
+              <div class="eng-item">
+                <i class="fa-solid fa-comment modal-icon"></i>
+                Feel free to treat me generously if you win something via this
+                app.
+              </div>
+              <div class="srb-item">
+                <i class="fa-solid fa-comment modal-icon"></i>
+                Slobodno me častite ukoliko dobijete nešto uz pomoć ove
+                aplikacije.
+              </div>
+              <div class="eng-item">
+                <a
+                  class="btn"
+                  href="https://marjanzivkovic.github.io/Football-Tips/"
+                  target="_blank"
+                  >Visit page</a
+                >
+              </div>
+              <div class="srb-item">
+                <a
+                  class="btn"
+                  href="https://marjanzivkovic.github.io/Football-Tips/"
+                  target="_blank"
+                  >Poseti stranicu</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-cards transformed">
+          <div class="portfolio-website football-tips">
+            <div class="portfolio-hover">
+              <small class="eng-item">view more</small>
+              <small class="srb-item">saznaj više</small>
+            </div>
+            <h4>Football tips</h4>
+          </div>
+        </div>
+        <!-- Cooking ideas -->
+        <div class="portfolio-modal-container">
+          <div class="portfolio-modal transformed">
+            <div class="close-btn">
+              <i class="fa-sharp fa-solid fa-xmark"></i>
+            </div>
+            <div class="modal-background cooking-ideas"></div>
+            <div class="modal-content">
+              <h3>Cooking ideas</h3>
+              <div class="eng-item">
+                <i class="fa-solid fa-file-pen modal-icon"></i>
+                Out of ideas on what to eat or drink today? No worries. Just
+                enter an ingredient name in the input field, hit search and this
+                app will give you plenty of possibilities.
+              </div>
+              <div class="srb-item">
+                <i class="fa-solid fa-file-pen modal-icon"></i>
+                Nemate ideju šta pojesti ili popiti danas? Bez brige. Samo
+                unesite naziv sastojka u polju za unos, pritisnite search i ova
+                aplikacija će vam dati puno mogućnosti.
+              </div>
+              <div>
+                <i class="fa-solid fa-laptop-code modal-icon"></i>
+                REACT.JS, REST based API
+              </div>
+              <div>
+                <i class="fa-solid fa-language modal-icon"></i>
+                English
+              </div>
+              <div class="eng-item">
+                <i class="fa-solid fa-comment modal-icon"></i> My first React
+                app. Credits to
+                <a href="https://www.youtube.com/@developedbyed"
+                  >developedbyed</a
+                >.
+              </div>
+              <div class="srb-item">
+                <i class="fa-solid fa-comment modal-icon"></i> Moja prva React
+                aplikacija. Hvala
+                <a href="https://www.youtube.com/@developedbyed"
+                  >developedbyed</a
+                >.
+              </div>
+              <div class="eng-item">
+                <a
+                  class="btn"
+                  href="https://marjanzivkovic.github.io/cooking-ideas/"
+                  target="_blank"
+                  >Visit page</a
+                >
+              </div>
+              <div class="srb-item">
+                <a
+                  class="btn"
+                  href="https://marjanzivkovic.github.io/cooking-ideas/"
+                  target="_blank"
+                  >Poseti stranicu</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-cards transformed">
+          <div class="portfolio-website cooking-ideas">
+            <div class="portfolio-hover">
+              <small class="eng-item">view more</small>
+              <small class="srb-item">saznaj više</small>
+            </div>
+            <h4>Cooking ideas</h4>
+          </div>
+        </div>
+        <!-- Fetch quotes -->
+        <div class="portfolio-modal-container">
+          <div class="portfolio-modal transformed">
+            <div class="close-btn">
+              <i class="fa-sharp fa-solid fa-xmark"></i>
+            </div>
+            <div class="modal-background fetch"></div>
+            <div class="modal-content">
+              <h3>Fetch quotes</h3>
+              <div class="eng-item">
+                <i class="fa-solid fa-file-pen modal-icon"></i>
+                This is a single-page app. It's a random quote generator. With
+                each click on the button, you get a new quote. If you like some
+                of them you can prepopulate a Facebook or Twitter post with a
+                single click.
+              </div>
+              <div class="srb-item">
+                <i class="fa-solid fa-file-pen modal-icon"></i>
+                Ovo je single-page aplikacija. U pitanju je generator slučajnih
+                citata. Svakim klikom na dugme dobijate nov citat. Ako vam se
+                neki od njih svidi, samo jednim klikom dobićete popunjen
+                Facebook ili Twitter post.
+              </div>
+              <div>
+                <i class="fa-solid fa-laptop-code modal-icon"></i>
+                HTML, CSS, JavaScript, fetch API, async/await
+              </div>
+              <div>
+                <i class="fa-solid fa-language modal-icon"></i>
+                English
+              </div>
+              <div class="eng-item">
+                <i class="fa-solid fa-comment modal-icon"></i>
+                Credits for inspiration and guidance to the guys from ZTM
+                Academy.
+              </div>
+              <div class="srb-item">
+                <i class="fa-solid fa-comment modal-icon"></i>
+                Hvala za inspiraciju i instrukcije momcima iz ZTM Academy.
+              </div>
+              <div class="eng-item">
+                <a
+                  class="btn"
+                  href="https://marjanzivkovic.github.io/Fetch-Quotes/"
+                  target="_blank"
+                  >Visit page</a
+                >
+              </div>
+              <div class="srb-item">
+                <a
+                  class="btn"
+                  href="https://marjanzivkovic.github.io/Fetch-Quotes/"
+                  target="_blank"
+                  >Poseti stranicu</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-cards transformed">
+          <div class="portfolio-website fetch">
+            <div class="portfolio-hover">
+              <small class="eng-item">view more</small>
+              <small class="srb-item">saznaj više</small>
+            </div>
+            <h4>Fetch quotes</h4>
+          </div>
+        </div>
+        <!-- Insect game -->
+        <div class="portfolio-modal-container">
+          <div class="portfolio-modal transformed">
+            <div class="close-btn">
+              <i class="fa-sharp fa-solid fa-xmark"></i>
+            </div>
+            <div class="modal-background game"></div>
+            <div class="modal-content">
+              <h3>Insect catching game</h3>
+              <div class="eng-item">
+                <i class="fa-solid fa-file-pen modal-icon"></i>
+                This is a silly game. You pick one of 4 different types of
+                insects. The ones you chose start appearing on the screen in
+                huge amounts. Spoiler alert: you can't catch them.
+              </div>
+              <div class="srb-item">
+                <i class="fa-solid fa-file-pen modal-icon"></i>
+                U pitanju je smešna igra. Birate jednu od 4 vrste insekata. One
+                koje izaberete počinju da se pojavljuju na ekranu u velikim
+                količinama. Upozorenje: ne možete ih pohvatati.
+              </div>
+              <div>
+                <i class="fa-solid fa-laptop-code modal-icon"></i>
+                HTML, CSS, JavaScript
+              </div>
+              <div>
+                <i class="fa-solid fa-language modal-icon"></i>
+                English
+              </div>
+              <div class="eng-item">
+                <i class="fa-solid fa-comment modal-icon"></i>
+                Credits for inspiration and guidance to Brad Traversy.
+              </div>
+              <div class="srb-item">
+                <i class="fa-solid fa-comment modal-icon"></i>
+                Hvala za inspiraciju i instrukcije Brad Traversy-ju.
+              </div>
+              <div class="eng-item">
+                <a
+                  class="btn"
+                  href="https://marjanzivkovic.github.io/Insect-game/"
+                  target="_blank"
+                  >Visit page</a
+                >
+              </div>
+              <div class="srb-item">
+                <a
+                  class="btn"
+                  href="https://marjanzivkovic.github.io/Insect-game/"
+                  target="_blank"
+                  >Poseti stranicu</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-cards transformed">
+          <div class="portfolio-website game">
+            <div class="portfolio-hover">
+              <small class="eng-item">view more</small>
+              <small class="srb-item">saznaj više</small>
+            </div>
+            <h4>Insect catching game</h4>
+          </div>
+        </div>
+        <!-- AJ tribute -->
+        <div class="portfolio-modal-container">
+          <div class="portfolio-modal transformed">
+            <div class="close-btn">
+              <i class="fa-sharp fa-solid fa-xmark"></i>
+            </div>
+            <div class="modal-background aj"></div>
+            <div class="modal-content">
+              <h3>AJ tribute website</h3>
+              <div class="eng-item">
+                <i class="fa-solid fa-file-pen modal-icon"></i>
+                This was my very first project. It's a complete website about my
+                favorite English coach with 9 pages some of which are very
+                different as I wanted to try lots of new ideas.
+              </div>
+              <div class="srb-item">
+                <i class="fa-solid fa-file-pen modal-icon"></i>
+                Moj prvi projekat. U pitanju je kompletan vebsajt o mom
+                omiljenom učitelju engleskog jezika, sa 9 stranica, od koje su
+                neke vrlo različite jer sam probao mnogo novih ideja.
+              </div>
+              <div>
+                <i class="fa-solid fa-laptop-code modal-icon"></i>
+                HTML, CSS, JavaScript, AOS.js
+              </div>
+              <div>
+                <i class="fa-solid fa-language modal-icon"></i>
+                English
+              </div>
+              <div class="eng-item">
+                <i class="fa-solid fa-comment modal-icon"></i>
+                While you're there, if you need to learn English AJ's your guy.
+              </div>
+              <div class="srb-item">
+                <i class="fa-solid fa-comment modal-icon"></i>
+                Dok ste tu, ako želite da naučite engleski, AJ je vaš čovek.
+              </div>
+              <div class="eng-item">
+                <a
+                  class="btn"
+                  href="https://marjanzivkovic.github.io/AJ-Tribute/"
+                  target="_blank"
+                  >Visit page</a
+                >
+              </div>
+              <div class="srb-item">
+                <a
+                  class="btn"
+                  href="https://marjanzivkovic.github.io/AJ-Tribute/"
+                  target="_blank"
+                  >Poseti stranicu</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-cards transformed">
+          <div class="portfolio-website aj">
+            <div class="portfolio-hover">
+              <small class="eng-item">view more</small>
+              <small class="srb-item">saznaj više</small>
+            </div>
+            <h4>AJ tribute</h4>
+          </div>
+        </div>
+      </div>
     </main>
     <section>
-        <div class="seal-container">
-            <div class="seal-box">
-                <img class="seal" src="assets/guarantee.svg" alt="guarantee-seal">
-                <img class="smoke" src="assets/smoke.gif" alt="smoke">
-            </div>
-            <div class="seal-text">
-                <div class="eng-item">My client's satisfaction is a priority No1. You will only pay if you are 100% satisfied with the final look and functionalities of your new website.</div>
-                <div class="srb-item">Zadovoljstvo mojih klijenata je prioritet br.1. Platićete samo ako ste 100% zadovoljni konačnim izgledom i funkcionalnostima Vašeg novog vebsajta.</div>
-            </div>
+      <div class="seal-container">
+        <div class="seal-box">
+          <img class="seal" src="assets/guarantee.svg" alt="guarantee-seal" />
+          <img class="smoke" src="assets/smoke.gif" alt="smoke" />
         </div>
+        <div class="seal-text">
+          <div class="eng-item">
+            My client's satisfaction is a priority No1. You will only pay if you
+            are 100% satisfied with the final look and functionalities of your
+            new website.
+          </div>
+          <div class="srb-item">
+            Zadovoljstvo mojih klijenata je prioritet br.1. Platićete samo ako
+            ste 100% zadovoljni konačnim izgledom i funkcionalnostima Vašeg
+            novog vebsajta.
+          </div>
+        </div>
+      </div>
     </section>
     <!-- green background -->
-    <div class="edu-green-slope"></div> 
+    <div class="edu-green-slope"></div>
     <!-- YouTube channel  (used to be EDU section, same classes for simplicity) -->
     <section class="edu nav-active" id="channel">
-        <div class="edu-hero-div"> 
-            <div>
-                <h2 class="eng-item">YouTube Channel<i class="fa-brands fa-youtube fa-bounce"></i></h2>
-                <h2 class="srb-item">YouTube Kanal<i class="fa-brands fa-youtube fa-bounce"></i></h2>
-            </div>
-            <div class="portfolio-matrix transformed"></div>
+      <div class="edu-hero-div">
+        <div>
+          <h2 class="eng-item">
+            YouTube Channel<i class="fa-brands fa-youtube fa-bounce"></i>
+          </h2>
+          <h2 class="srb-item">
+            YouTube Kanal<i class="fa-brands fa-youtube fa-bounce"></i>
+          </h2>
         </div>
-        <div class="edu-container">
-            <div class="play-btn-container warehouse-btn-container">
-                <button class="play-animation-btn warehouse-animation-btn"><img src="./assets/play.png" alt="play-animation-button"></button>
-                <p class="eng-item"><i class="fa-solid fa-music"></i> Play animation <i class="fa-solid fa-music"></i></p>
-                <p class="srb-item"><i class="fa-solid fa-music"></i> Pusti animaciju <i class="fa-solid fa-music"></i></p>
-            </div>
-            <div class="warehouse-animation-container">
-                <a href="https://www.youtube.com/channel/UC24LnCPJAIOZpGvfjTEwQfQ" target="_blank"><img class="logo-img" src="./assets/logo.svg" alt="logo"></a>
-                <img class="forklift" src="./assets/forklift.svg" alt="forklift">
-            </div>
-            <div class="youtube-content-container">
-                <div class="youtube-description">
-                    <h3 class="eng-item">Channel Description</h3>
-                    <h3 class="srb-item">Opis Kanala</h3>
-                    <p class="eng-item">🚀 Welcome to the Warehouse Dev's Coding Chronicles! 🌐 Join me, a Junior Front-End enthusiast, as I embark on a coding quest through HTML, CSS, JavaScript, and the mystical realms of React.</p>
-                    <p class="srb-item">🚀 Dobro došli u hronike koda Programera iz Magacina! 🌐 Pridružite se meni, Junior Front-End entuzijasti, dok se ukrcavam na koderski pohod kroz HTML, CSS, JavaScript, i mistično carstvo React-a.</p>
-                    <p class="eng-item">🔍 Follow along as I document my learning journey through tutorials, sharing the ups, downs, and a sprinkle of humor. This channel is a space for fellow coding adventurers, where we navigate the twists and turns of web development together.</p>
-                    <p class="srb-item">🔍 Pridružite se dok dokumentujem svoje putovanje kroz tutorijale, deleći uspone, padove i mrvice humora. Ovaj kanal je prostor za programere avanturiste, gde zajedno navigujemo kroz preokrete veb development-a.</p>
-                    <p class="eng-item">I'm your fellow traveler on the path to mastery. Let's learn, grow, and laugh at the coding setbacks along the way. Subscribe and join the adventure—because the best way to learn is by doing it together! 💻✨</p>
-                    <p class="srb-item">Ja sam Vaš drugar putnik na putu do majstorstva. Hajde da učimo, rastemo i smejemo se programerskim preprekama na putu. Pretplatite se na kanal i pridružite se avanturi zato što je najbolje učiti zajedno! 💻✨</p>
-                    <p class="eng-item"><a class="btn" href="https://www.youtube.com/channel/UC24LnCPJAIOZpGvfjTEwQfQ" target="_blank">Visit channel</a></p>
-                    <p class="srb-item"><a class="btn" href="https://www.youtube.com/channel/UC24LnCPJAIOZpGvfjTEwQfQ" target="_blank">Posetite kanal</a></p>
-                </div>
-                <div class="youtube-videos">
-                    <h3 class="eng-item">Some of the videos</h3>
-                    <h3 class="srb-item">Neki od videa</h3>
-                    <a href="https://youtu.be/-NXFhVsdL8E" target="_blank"><img src="./assets/flags.jpg" alt="fun with flags"><span>CSS Fun With Flags</span></a>
-                    <a href="https://youtu.be/itBwZzjN1m0" target="_blank"><img src="./assets/starwars.jpg" alt="starwars"><span>Star Wars Opening Crawl Animation </span></a>
-                    <a href="https://youtu.be/Nui-XXtaQPc" target="_blank"><img src="./assets/scroll.jpg" alt="scroll mastery"><span>Horizontal Scroll Indicator with JS</span></a>
-                </div>
-            </div>
-            
+        <div class="portfolio-matrix transformed"></div>
+      </div>
+      <div class="edu-container">
+        <div class="play-btn-container warehouse-btn-container">
+          <button class="play-animation-btn warehouse-animation-btn">
+            <img src="./assets/play.png" alt="play-animation-button" />
+          </button>
+          <p class="eng-item">
+            <i class="fa-solid fa-music"></i> Play animation
+            <i class="fa-solid fa-music"></i>
+          </p>
+          <p class="srb-item">
+            <i class="fa-solid fa-music"></i> Pusti animaciju
+            <i class="fa-solid fa-music"></i>
+          </p>
         </div>
+        <div class="warehouse-animation-container">
+          <a
+            href="https://www.youtube.com/channel/UC24LnCPJAIOZpGvfjTEwQfQ"
+            target="_blank"
+            ><img class="logo-img" src="./assets/logo.svg" alt="logo"
+          /></a>
+          <img class="forklift" src="./assets/forklift.svg" alt="forklift" />
+        </div>
+        <div class="youtube-content-container">
+          <div class="youtube-description">
+            <h3 class="eng-item">Channel Description</h3>
+            <h3 class="srb-item">Opis Kanala</h3>
+            <p class="eng-item">
+              🚀 Welcome to the Warehouse Dev's Coding Chronicles! 🌐 Join me, a
+              Junior Front-End enthusiast, as I embark on a coding quest through
+              HTML, CSS, JavaScript, and the mystical realms of React.
+            </p>
+            <p class="srb-item">
+              🚀 Dobro došli u hronike koda Programera iz Magacina! 🌐
+              Pridružite se meni, Junior Front-End entuzijasti, dok se ukrcavam
+              na koderski pohod kroz HTML, CSS, JavaScript, i mistično carstvo
+              React-a.
+            </p>
+            <p class="eng-item">
+              🔍 Follow along as I document my learning journey through
+              tutorials, sharing the ups, downs, and a sprinkle of humor. This
+              channel is a space for fellow coding adventurers, where we
+              navigate the twists and turns of web development together.
+            </p>
+            <p class="srb-item">
+              🔍 Pridružite se dok dokumentujem svoje putovanje kroz tutorijale,
+              deleći uspone, padove i mrvice humora. Ovaj kanal je prostor za
+              programere avanturiste, gde zajedno navigujemo kroz preokrete veb
+              development-a.
+            </p>
+            <p class="eng-item">
+              I'm your fellow traveler on the path to mastery. Let's learn,
+              grow, and laugh at the coding setbacks along the way. Subscribe
+              and join the adventure—because the best way to learn is by doing
+              it together! 💻✨
+            </p>
+            <p class="srb-item">
+              Ja sam Vaš drugar putnik na putu do majstorstva. Hajde da učimo,
+              rastemo i smejemo se programerskim preprekama na putu. Pretplatite
+              se na kanal i pridružite se avanturi zato što je najbolje učiti
+              zajedno! 💻✨
+            </p>
+            <p class="eng-item">
+              <a
+                class="btn"
+                href="https://www.youtube.com/channel/UC24LnCPJAIOZpGvfjTEwQfQ"
+                target="_blank"
+                >Visit channel</a
+              >
+            </p>
+            <p class="srb-item">
+              <a
+                class="btn"
+                href="https://www.youtube.com/channel/UC24LnCPJAIOZpGvfjTEwQfQ"
+                target="_blank"
+                >Posetite kanal</a
+              >
+            </p>
+          </div>
+          <div class="youtube-videos">
+            <h3 class="eng-item">Some of the videos</h3>
+            <h3 class="srb-item">Neki od videa</h3>
+            <div class="latest-youtube-videos">
+              <a href="https://youtu.be/-NXFhVsdL8E" target="_blank"
+                ><img src="./assets/flags.jpg" alt="fun with flags" /><span
+                  >CSS Fun With Flags</span
+                ></a
+              >
+              <a href="https://youtu.be/itBwZzjN1m0" target="_blank"
+                ><img src="./assets/starwars.jpg" alt="starwars" /><span
+                  >Star Wars Opening Crawl Animation
+                </span></a
+              >
+              <a href="https://youtu.be/Nui-XXtaQPc" target="_blank"
+                ><img src="./assets/scroll.jpg" alt="scroll mastery" /><span
+                  >Horizontal Scroll Indicator with JS</span
+                ></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    <div class="edu-green-slope"></div> 
+    <div class="edu-green-slope"></div>
     <!-- contact -->
     <section class="contact nav-active" id="contact">
-        <h2 class="eng-item">Contact me <i class="fa-solid fa-phone-flip fa-shake"></i></h2>
-        <h2 class="srb-item">Kontaktirajte me <i class="fa-solid fa-phone-flip fa-shake"></i></h2>
-        <div class="contact-flex">
-            <div class="contact-info">
-                <h3 class="eng-item">Marjan Zivkovic</h3>
-                <h3 class="srb-item">Marjan Živković</h3>
-                <div class="eng-item"><a href="https://www.google.com/maps/place/Rade+Drainac,+Blace/@43.2929457,21.2830352,16.89z/data=!4m6!3m5!1s0x47567540bdff37d3:0xd26ce7b525cfa362!8m2!3d43.2926667!4d21.2834959!16s%2Fg%2F1tgb642w" target="_blank"><i class="fa-solid fa-location-dot"></i> Rada Drainca bb, Blace, Serbia</a></div>
-                <div class="srb-item"><a href="https://www.google.com/maps/place/Rade+Drainac,+Blace/@43.2929457,21.2830352,16.89z/data=!4m6!3m5!1s0x47567540bdff37d3:0xd26ce7b525cfa362!8m2!3d43.2926667!4d21.2834959!16s%2Fg%2F1tgb642w" target="_blank"><i class="fa-solid fa-location-dot"></i> Rada Drainca bb, Blace, Srbija</a></div>
-                <div><a href="tel:+381643466230"><i class="fa-solid fa-phone"></i> +381643466230</a></div>
-                <div><a href="sms:+381643466230&body=..."><i class="fa-solid fa-comment-sms"></i> +381643466230</a></div>
-                <div><a href="mailto:zivkovicmarjan@yahoo.com"><i class="fa-solid fa-at"></i> zivkovicmarjan@yahoo.com</a></div>
-                <div><a href="https://www.youtube.com/channel/UC24LnCPJAIOZpGvfjTEwQfQ" target="_blank"><i class="fa-brands fa-youtube"></i> @WarehouseDev</a></div>
-            </div>
-            <div class="contact-text transformed"> 
-                <div>
-                    <p class="eng-item"><strong>Download resume:</strong> <a class="download-pdf" href="./assets/CV_Marjan_Zivkovic.pdf" target="_blank"><i class="fa-solid fa-file-pdf"></i></a></p>
-                    <p class="srb-item"><strong>Preuzmite CV:</strong> <a class="download-pdf" href="./assets/CV_Marjan_Zivkovic.pdf" target="_blank"><i class="fa-solid fa-file-pdf"></i></a></p>
-                </div>
-            </div>
-            <div class="contact-text transformed"> 
-                <div>
-                    <p  class="eng-item"><strong>Competency:</strong></p>
-                    <p class="srb-item"><strong >Stručnost:</strong></p>
-                    <div class="competency">
-                        <div><i title="HTML" class="fa-brands fa-html5"></i> HTML</div>
-                        <div><i title="CSS" class="fa-brands fa-css3-alt"></i> CSS</div>
-                        <div><i class="fa-brands fa-js" title="JavaScript"></i> JavaScript</div>
-                        <div><i title="React" class="fa-brands fa-react"></i> React</div>              
-                    </div>
-                </div>
-            </div>
+      <h2 class="eng-item">
+        Contact me <i class="fa-solid fa-phone-flip fa-shake"></i>
+      </h2>
+      <h2 class="srb-item">
+        Kontaktirajte me <i class="fa-solid fa-phone-flip fa-shake"></i>
+      </h2>
+      <div class="contact-flex">
+        <div class="contact-info">
+          <h3 class="eng-item">Marjan Zivkovic</h3>
+          <h3 class="srb-item">Marjan Živković</h3>
+          <div class="eng-item">
+            <a
+              href="https://www.google.com/maps/place/Rade+Drainac,+Blace/@43.2929457,21.2830352,16.89z/data=!4m6!3m5!1s0x47567540bdff37d3:0xd26ce7b525cfa362!8m2!3d43.2926667!4d21.2834959!16s%2Fg%2F1tgb642w"
+              target="_blank"
+              ><i class="fa-solid fa-location-dot"></i> Rada Drainca bb, Blace,
+              Serbia</a
+            >
+          </div>
+          <div class="srb-item">
+            <a
+              href="https://www.google.com/maps/place/Rade+Drainac,+Blace/@43.2929457,21.2830352,16.89z/data=!4m6!3m5!1s0x47567540bdff37d3:0xd26ce7b525cfa362!8m2!3d43.2926667!4d21.2834959!16s%2Fg%2F1tgb642w"
+              target="_blank"
+              ><i class="fa-solid fa-location-dot"></i> Rada Drainca bb, Blace,
+              Srbija</a
+            >
+          </div>
+          <div>
+            <a href="tel:+381643466230"
+              ><i class="fa-solid fa-phone"></i> +381643466230</a
+            >
+          </div>
+          <div>
+            <a href="sms:+381643466230&body=..."
+              ><i class="fa-solid fa-comment-sms"></i> +381643466230</a
+            >
+          </div>
+          <div>
+            <a href="mailto:zivkovicmarjan@yahoo.com"
+              ><i class="fa-solid fa-at"></i> zivkovicmarjan@yahoo.com</a
+            >
+          </div>
+          <div>
+            <a
+              href="https://www.youtube.com/channel/UC24LnCPJAIOZpGvfjTEwQfQ"
+              target="_blank"
+              ><i class="fa-brands fa-youtube"></i> @WarehouseDev</a
+            >
+          </div>
         </div>
-        <div class="contact-form transformed">
-            <p class="eng-item">Email me</p>
-            <p class="srb-item">Pošaljite email</p>
-            <div class="eng-item"><small> This 3D button <i class="fa-regular fa-circle-down"></i> will redirect you to the form page</small></div>
-            <div class="srb-item"><small> Ovo 3D dugme <i class="fa-regular fa-circle-down"></i> će Vas preusmeriti na stranicu obrasca</small></div>
-            <div class="btn-3d-container">
-                <div class="btn-3d-holder">
-                    <img src="assets/matrix.jpg" alt="matrix">
-                    <div class="btn-3d">
-                        <a class="eng-item" href="https://form.jotform.com/222502700258042" target="_blank">Send email!</a>
-                        <a class="srb-item" href="https://form.jotform.com/222502700258042" target="_blank">Pošalji email!</a>
-                    </div>
-                </div>
-            </div>
+        <div class="contact-text transformed">
+          <div>
+            <p class="eng-item">
+              <strong>Download resume:</strong>
+              <a
+                class="download-pdf"
+                href="./assets/CV_Marjan_Zivkovic.pdf"
+                target="_blank"
+                ><i class="fa-solid fa-file-pdf"></i
+              ></a>
+            </p>
+            <p class="srb-item">
+              <strong>Preuzmite CV:</strong>
+              <a
+                class="download-pdf"
+                href="./assets/CV_Marjan_Zivkovic.pdf"
+                target="_blank"
+                ><i class="fa-solid fa-file-pdf"></i
+              ></a>
+            </p>
+          </div>
         </div>
-        <footer>
-            <div>&copy; <span class="current-year"></span> by marjan-zivkovic.com <a href="https://github.com/MarjanZivkovic" target="_blank" title="Github profile"><i class="fa-brands fa-github"></i></a></div>
-            <div class="to-top" title="Go to top"><i class="fa-regular fa-circle-up"></i></div>
-        </footer>
-    </section>    
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <div class="contact-text transformed">
+          <div>
+            <p class="eng-item"><strong>Competency:</strong></p>
+            <p class="srb-item"><strong>Stručnost:</strong></p>
+            <div class="competency">
+              <div><i title="HTML" class="fa-brands fa-html5"></i> HTML</div>
+              <div><i title="CSS" class="fa-brands fa-css3-alt"></i> CSS</div>
+              <div>
+                <i class="fa-brands fa-js" title="JavaScript"></i> JavaScript
+              </div>
+              <div><i title="React" class="fa-brands fa-react"></i> React</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form transformed">
+        <p class="eng-item">Email me</p>
+        <p class="srb-item">Pošaljite email</p>
+        <div class="eng-item">
+          <small>
+            This 3D button <i class="fa-regular fa-circle-down"></i> will
+            redirect you to the form page</small
+          >
+        </div>
+        <div class="srb-item">
+          <small>
+            Ovo 3D dugme <i class="fa-regular fa-circle-down"></i> će Vas
+            preusmeriti na stranicu obrasca</small
+          >
+        </div>
+        <div class="btn-3d-container">
+          <div class="btn-3d-holder">
+            <img src="assets/matrix.jpg" alt="matrix" />
+            <div class="btn-3d">
+              <a
+                class="eng-item"
+                href="https://form.jotform.com/222502700258042"
+                target="_blank"
+                >Send email!</a
+              >
+              <a
+                class="srb-item"
+                href="https://form.jotform.com/222502700258042"
+                target="_blank"
+                >Pošalji email!</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div>
+          &copy; <span class="current-year"></span> by marjan-zivkovic.com
+          <a
+            href="https://github.com/WarehouseDev"
+            target="_blank"
+            title="Github profile"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </div>
+        <div class="to-top" title="Go to top">
+          <i class="fa-regular fa-circle-up"></i>
+        </div>
+      </footer>
+    </section>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"
+      integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
