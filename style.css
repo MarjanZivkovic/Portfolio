@@ -454,9 +454,7 @@ nav ul li a:hover,
 .game {
   background: url(assets/game.jpg) no-repeat right top / cover;
 }
-.fetch {
-  background: url(assets/quotes.jpg) no-repeat center center / cover;
-}
+
 .milenkovic {
   background: url(assets/milenkovic.jpg) no-repeat center center / cover;
 }
@@ -472,6 +470,10 @@ nav ul li a:hover,
 .sody {
   background: url(assets/sody.jpg) no-repeat center top / cover;
 }
+.pumping {
+  background: url(assets/pumpanje.jpg) no-repeat center top / cover;
+}
+
 .portfolio-hover {
   position: absolute;
   width: 100%;
@@ -575,7 +577,7 @@ nav ul li a:hover,
 .modal-content .btn {
   width: 30%;
   padding: 0.2rem 0;
-  margin: 0 0 0 auto;
+  margin: -0.5rem 0 0 auto;
 }
 /* seal animation*/
 .seal-container {
